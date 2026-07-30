@@ -1,0 +1,1935 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>PaleoColor</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-lg navbar-dark mb-4 sticky-top" style="background-color: #1a252f;">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">PaleoColor</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-outline-info btn-sm fw-bold mt-1" data-bs-toggle="modal" data-bs-target="#infoModal">
+                            О справочнике
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container flex-grow-1">
+        
+<div class="row">
+    <div class="col-md-3">
+        <div class="card p-3 mb-4 sticky-search">
+            <h5 class="mb-3">Поиск по базе</h5>
+            <form id="searchForm" onsubmit="event.preventDefault(); filterAndSort();">
+                
+                <div class="mb-2">
+                    <label for="searchName" class="form-label small">Название</label>
+                    <input type="text" id="searchName" class="form-control form-control-sm">
+                </div>
+                
+                <div class="mb-2">
+                    <label for="searchPeriod" class="form-label small">Период</label>
+                    <input type="text" id="searchPeriod" class="form-control form-control-sm">
+                </div>
+                
+                <div class="mb-2">
+                    <label for="searchCountry" class="form-label small">Страна</label>
+                    <input type="text" id="searchCountry" class="form-control form-control-sm">
+                </div>
+                
+                <div class="mb-3">
+                    <label for="sortBy" class="form-label small">Сортировка</label>
+                    <select id="sortBy" class="form-select form-select-sm">
+                        <option value="name" selected>По алфавиту</option>
+                        <option value="period">По периоду (от кембрия до мела)</option>
+                    </select>
+                </div>
+                
+                <button type="submit" class="btn btn-dark w-100 btn-sm">Искать</button>
+            </form>
+        </div>
+    </div>
+    
+    <div class="col-md-9">
+        <div class="row row-cols-1 row-cols-md-2 g-4" id="cardsContainer">
+            
+            
+            
+            
+            
+
+            <div class="col taxon-card-col" 
+                 data-name="anchiornis huxleyi" 
+                 data-period="поздняя юра (оксфордский ярус, ~160 млн лет назад)" 
+                 data-location="провинция ляонин, китай"
+                 data-period-order="8">
+                
+                <div class="card h-100 p-3 d-flex flex-column">
+                    
+                    
+                    
+                    
+                        <a href="data/taxon_1.html">
+                            <img src="static/media_archive/Anchiornis/Anchiornis_r.jpg" 
+                                 class="card-img-top mb-3 rounded" 
+                                 style="height: 200px; object-fit: cover; width: 100%;" 
+                                 alt="Реконструкция Anchiornis huxleyi">
+                        </a>
+                    
+
+                    <div class="flex-grow-1">
+                        <h5 class="card-title font-italic">
+                            <a href="data/taxon_1.html" class="text-decoration-none text-dark">Anchiornis huxleyi</a>
+                        </h5>
+                        
+                        <p class="mb-1 small text-muted">Поздняя юра (оксфордский ярус, ~160 млн лет назад) | Провинция Ляонин, Китай</p>
+                        <p class="mt-2 small mb-0">В работе Li et al., 2010 изучено 29 участков экземпляра BMNHC PH828, по которым путем анализа меланосом восстановлена ок...</p>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+            
+            
+            
+
+            <div class="col taxon-card-col" 
+                 data-name="anurognathidae" 
+                 data-period="средняя–поздняя юра (~164–160 млн лет назад)" 
+                 data-location="китай (внутренняя монголия и пров. ляонин)"
+                 data-period-order="8">
+                
+                <div class="card h-100 p-3 d-flex flex-column">
+                    
+                    
+                    
+                    
+                        <a href="data/taxon_20.html">
+                            <img src="static/media_archive/Anurognathidae/Anurognathidae_r1.png" 
+                                 class="card-img-top mb-3 rounded" 
+                                 style="height: 200px; object-fit: cover; width: 100%;" 
+                                 alt="Реконструкция Anurognathidae">
+                        </a>
+                    
+
+                    <div class="flex-grow-1">
+                        <h5 class="card-title font-italic">
+                            <a href="data/taxon_20.html" class="text-decoration-none text-dark">Anurognathidae</a>
+                        </h5>
+                        
+                        <p class="mb-1 small text-muted">Средняя–поздняя юра (~164–160 млн лет назад) | Китай (Внутренняя Монголия и пров. Ляонин)</p>
+                        <p class="mt-2 small mb-0">Сканирующая электронная микроскопия образцов двух анурогнатидных птерозавров (NJU-57003 и CAGS-Z070) выявила плотно упак...</p>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+            
+            
+            
+
+            <div class="col taxon-card-col" 
+                 data-name="archaeopteryx lithographica" 
+                 data-period="поздняя юра (титонский ярус, ~150 млн лет назад)" 
+                 data-location="германия (бавария)"
+                 data-period-order="8">
+                
+                <div class="card h-100 p-3 d-flex flex-column">
+                    
+                    
+                    
+                    
+                        <a href="data/taxon_23.html">
+                            <img src="static/media_archive/Archaeopteryx/Archaeopteryx_r.png" 
+                                 class="card-img-top mb-3 rounded" 
+                                 style="height: 200px; object-fit: cover; width: 100%;" 
+                                 alt="Реконструкция Archaeopteryx lithographica">
+                        </a>
+                    
+
+                    <div class="flex-grow-1">
+                        <h5 class="card-title font-italic">
+                            <a href="data/taxon_23.html" class="text-decoration-none text-dark">Archaeopteryx lithographica</a>
+                        </h5>
+                        
+                        <p class="mb-1 small text-muted">Поздняя юра (титонский ярус, ~150 млн лет назад) | Германия (Бавария)</p>
+                        <p class="mt-2 small mb-0">Проведено несколько исследований окраски перьев крыла археоптерикса. Судя по распределению меди, у археоптерикса почти в...</p>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+            
+            
+            
+
+            <div class="col taxon-card-col" 
+                 data-name="beipiaosaurus" 
+                 data-period="ранний мел (~125 млн лет назад)" 
+                 data-location="провинция ляонин, китай"
+                 data-period-order="9">
+                
+                <div class="card h-100 p-3 d-flex flex-column">
+                    
+                    
+                    
+                    
+                        <a href="data/taxon_26.html">
+                            <img src="static/media_archive/Beipiaosaurus/Beipiaosaurus_r.png" 
+                                 class="card-img-top mb-3 rounded" 
+                                 style="height: 200px; object-fit: cover; width: 100%;" 
+                                 alt="Реконструкция Beipiaosaurus">
+                        </a>
+                    
+
+                    <div class="flex-grow-1">
+                        <h5 class="card-title font-italic">
+                            <a href="data/taxon_26.html" class="text-decoration-none text-dark">Beipiaosaurus</a>
+                        </h5>
+                        
+                        <p class="mb-1 small text-muted">Ранний мел (~125 млн лет назад) | Провинция Ляонин, Китай</p>
+                        <p class="mt-2 small mb-0">Форма меланосом в ископаемых перьях, отобранных из области шеи образца BMNHC PH000911, свидетельствует о коричневом окра...</p>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+            
+            
+            
+
+            <div class="col taxon-card-col" 
+                 data-name="bohaiornithid (cugb p1202)" 
+                 data-period="ранний мел (аптский ярус, ~120 млн лет назад)" 
+                 data-location="провинция ляонин, китай"
+                 data-period-order="9">
+                
+                <div class="card h-100 p-3 d-flex flex-column">
+                    
+                    
+                    
+                    
+                        <a href="data/taxon_29.html">
+                            <img src="static/media_archive/CUGB P1202/CUGB P1202_r.png" 
+                                 class="card-img-top mb-3 rounded" 
+                                 style="height: 200px; object-fit: cover; width: 100%;" 
+                                 alt="Реконструкция Bohaiornithid (CUGB P1202)">
+                        </a>
+                    
+
+                    <div class="flex-grow-1">
+                        <h5 class="card-title font-italic">
+                            <a href="data/taxon_29.html" class="text-decoration-none text-dark">Bohaiornithid (CUGB P1202)</a>
+                        </h5>
+                        
+                        <p class="mb-1 small text-muted">Ранний мел (аптский ярус, ~120 млн лет назад) | Провинция Ляонин, Китай</p>
+                        <p class="mt-2 small mb-0">Анализ меланосом образца CUGB P1202 показал, что контурные перья на голове, затылке и теле имели переливающийся окрас. М...</p>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+            
+            
+            
+
+            <div class="col taxon-card-col" 
+                 data-name="borealopelta markmitchelli" 
+                 data-period="ранний мел (альбский ярус, ~110 млн лет назад)" 
+                 data-location="канада (провинция альберта)"
+                 data-period-order="9">
+                
+                <div class="card h-100 p-3 d-flex flex-column">
+                    
+                    
+                    
+                    
+                        <a href="data/taxon_9.html">
+                            <img src="static/media_archive/Borealopelta/Borealopelta_sr.jpeg" 
+                                 class="card-img-top mb-3 rounded" 
+                                 style="height: 200px; object-fit: cover; width: 100%;" 
+                                 alt="Реконструкция Borealopelta markmitchelli">
+                        </a>
+                    
+
+                    <div class="flex-grow-1">
+                        <h5 class="card-title font-italic">
+                            <a href="data/taxon_9.html" class="text-decoration-none text-dark">Borealopelta markmitchelli</a>
+                        </h5>
+                        
+                        <p class="mb-1 small text-muted">Ранний мел (альбский ярус, ~110 млн лет назад) | Канада (провинция Альберта)</p>
+                        <p class="mt-2 small mb-0">В работе Brown et al. (2017) исследован экземпляр TMP 2011.033.0001. Взято 147 проб с разных участков образца, что позво...</p>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+            
+            
+            
+
+            <div class="col taxon-card-col" 
+                 data-name="caihong juji" 
+                 data-period="поздняя юра (оксфордский ярус, ~161 млн лет назад)" 
+                 data-location="провинция хэбэй, китай"
+                 data-period-order="8">
+                
+                <div class="card h-100 p-3 d-flex flex-column">
+                    
+                    
+                    
+                    
+                        <a href="data/taxon_2.html">
+                            <img src="static/media_archive/Caihong/Caihong_r.jpg" 
+                                 class="card-img-top mb-3 rounded" 
+                                 style="height: 200px; object-fit: cover; width: 100%;" 
+                                 alt="Реконструкция Caihong juji">
+                        </a>
+                    
+
+                    <div class="flex-grow-1">
+                        <h5 class="card-title font-italic">
+                            <a href="data/taxon_2.html" class="text-decoration-none text-dark">Caihong juji</a>
+                        </h5>
+                        
+                        <p class="mb-1 small text-muted">Поздняя юра (оксфордский ярус, ~161 млн лет назад) | Провинция Хэбэй, Китай</p>
+                        <p class="mt-2 small mb-0">В работе Hu et al. (2018) проведен анализ меланосом с 66 участков экземпляра PMoL-B00175. Согласно исследованию, основна...</p>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+            
+            
+            
+
+            <div class="col taxon-card-col" 
+                 data-name="canadia spinosa" 
+                 data-period="средний кембрий (~508 млн лет назад)" 
+                 data-location="канада (британская колумбия)"
+                 data-period-order="1">
+                
+                <div class="card h-100 p-3 d-flex flex-column">
+                    
+                    
+                    
+                    
+                        <a href="data/taxon_18.html">
+                            <img src="static/media_archive/Canadia/Canadia_r.png" 
+                                 class="card-img-top mb-3 rounded" 
+                                 style="height: 200px; object-fit: cover; width: 100%;" 
+                                 alt="Реконструкция Canadia spinosa">
+                        </a>
+                    
+
+                    <div class="flex-grow-1">
+                        <h5 class="card-title font-italic">
+                            <a href="data/taxon_18.html" class="text-decoration-none text-dark">Canadia spinosa</a>
+                        </h5>
+                        
+                        <p class="mb-1 small text-muted">Средний кембрий (~508 млн лет назад) | Канада (Британская Колумбия)</p>
+                        <p class="mt-2 small mb-0">На щетинках образца USNM 202335, принадлежащего полихетному червю Canadia spinosa, обнаружены параллельные бороздки с по...</p>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+            
+            
+            
+
+            <div class="col taxon-card-col" 
+                 data-name="carcinosoma newlini" 
+                 data-period="поздний силур (~420 млн лет назад)" 
+                 data-location="сша (штат индиана)"
+                 data-period-order="3">
+                
+                <div class="card h-100 p-3 d-flex flex-column">
+                    
+                    
+                    
+                    
+                        <a href="data/taxon_22.html">
+                            <img src="static/media_archive/Carcinosoma/Carcinosoma_r.png" 
+                                 class="card-img-top mb-3 rounded" 
+                                 style="height: 200px; object-fit: cover; width: 100%;" 
+                                 alt="Реконструкция Carcinosoma newlini">
+                        </a>
+                    
+
+                    <div class="flex-grow-1">
+                        <h5 class="card-title font-italic">
+                            <a href="data/taxon_22.html" class="text-decoration-none text-dark">Carcinosoma newlini</a>
+                        </h5>
+                        
+                        <p class="mb-1 small text-muted">Поздний силур (~420 млн лет назад) | США (штат Индиана)</p>
+                        <p class="mt-2 small mb-0">В Kjellesvig-Waering (1958) описан экземпляр Carcinosoma newlini из силурийского доломита Кокомо (Индиана), который сохр...</p>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+            
+            
+            
+
+            <div class="col taxon-card-col" 
+                 data-name="caudipteryx zoui" 
+                 data-period="ранний мел (~125 млн лет назад)" 
+                 data-location="провинция ляонин, китай"
+                 data-period-order="9">
+                
+                <div class="card h-100 p-3 d-flex flex-column">
+                    
+                    
+                    
+                    
+                        <a href="data/taxon_27.html">
+                            <img src="static/media_archive/Caudipteryx/Caudipteryx_r.png" 
+                                 class="card-img-top mb-3 rounded" 
+                                 style="height: 200px; object-fit: cover; width: 100%;" 
+                                 alt="Реконструкция Caudipteryx zoui">
+                        </a>
+                    
+
+                    <div class="flex-grow-1">
+                        <h5 class="card-title font-italic">
+                            <a href="data/taxon_27.html" class="text-decoration-none text-dark">Caudipteryx zoui</a>
+                        </h5>
+                        
+                        <p class="mb-1 small text-muted">Ранний мел (~125 млн лет назад) | Провинция Ляонин, Китай</p>
+                        <p class="mt-2 small mb-0">Анализ сохранившихся перьев на различных участках тела указывает на преобладание темного (черного или темно-серого) окра...</p>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+            
+            
+            
+
+            <div class="col taxon-card-col" 
+                 data-name="changzuiornis ahgmi" 
+                 data-period="ранний мел (аптский ярус, ~122 млн лет назад)" 
+                 data-location="провинция ляонин, китай"
+                 data-period-order="9">
+                
+                <div class="card h-100 p-3 d-flex flex-column">
+                    
+                    
+                    
+                    
+                        <a href="data/taxon_25.html">
+                            <img src="static/media_archive/Changzuiornis/Changzuiornis_r.png" 
+                                 class="card-img-top mb-3 rounded" 
+                                 style="height: 200px; object-fit: cover; width: 100%;" 
+                                 alt="Реконструкция Changzuiornis ahgmi">
+                        </a>
+                    
+
+                    <div class="flex-grow-1">
+                        <h5 class="card-title font-italic">
+                            <a href="data/taxon_25.html" class="text-decoration-none text-dark">Changzuiornis ahgmi</a>
+                        </h5>
+                        
+                        <p class="mb-1 small text-muted">Ранний мел (аптский ярус, ~122 млн лет назад) | Провинция Ляонин, Китай</p>
+                        <p class="mt-2 small mb-0">Изучение отпечатков меланосом показало наличие удлиненных структур в перьях крыльев и хвоста, что свидетельствует о том,...</p>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+            
+            
+            
+
+            <div class="col taxon-card-col" 
+                 data-name="coelurosauria indet. (dip-v-15103)" 
+                 data-period="середина мела (сеноманский ярус, ~99 млн лет назад)" 
+                 data-location="мьянма (штат качин, долина хуконг)"
+                 data-period-order="9">
+                
+                <div class="card h-100 p-3 d-flex flex-column">
+                    
+                    
+                    
+                    
+                        <a href="data/taxon_42.html">
+                            <img src="static/media_archive/DIP-V-15103/DIP-V-15103_r.jpg" 
+                                 class="card-img-top mb-3 rounded" 
+                                 style="height: 200px; object-fit: cover; width: 100%;" 
+                                 alt="Реконструкция Coelurosauria indet. (DIP-V-15103)">
+                        </a>
+                    
+
+                    <div class="flex-grow-1">
+                        <h5 class="card-title font-italic">
+                            <a href="data/taxon_42.html" class="text-decoration-none text-dark">Coelurosauria indet. (DIP-V-15103)</a>
+                        </h5>
+                        
+                        <p class="mb-1 small text-muted">Середина мела (сеноманский ярус, ~99 млн лет назад) | Мьянма (штат Качин, долина Хуконг)</p>
+                        <p class="mt-2 small mb-0">В бирманском янтаре обнаружен кусок хвоста детеныша целурозавра (образец DIP-V-15103). Он сохранил следы прижизненной ок...</p>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+            
+            
+            
+
+            <div class="col taxon-card-col" 
+                 data-name="confuciusornis sanctus" 
+                 data-period=" ранний мел (аптский ярус), ~125 млн лет назад" 
+                 data-location="провинции ляонин и хэбэй, китай"
+                 data-period-order="9">
+                
+                <div class="card h-100 p-3 d-flex flex-column">
+                    
+                    
+                    
+                    
+                        <a href="data/taxon_8.html">
+                            <img src="static/media_archive/Confuciusornis/Confuciusornis_r1.png" 
+                                 class="card-img-top mb-3 rounded" 
+                                 style="height: 200px; object-fit: cover; width: 100%;" 
+                                 alt="Реконструкция Confuciusornis sanctus">
+                        </a>
+                    
+
+                    <div class="flex-grow-1">
+                        <h5 class="card-title font-italic">
+                            <a href="data/taxon_8.html" class="text-decoration-none text-dark">Confuciusornis sanctus</a>
+                        </h5>
+                        
+                        <p class="mb-1 small text-muted"> Ранний мел (аптский ярус), ~125 млн лет назад | Провинции Ляонин и Хэбэй, Китай</p>
+                        <p class="mt-2 small mb-0">В исследовании Zhang et al. (2010) были взяты образцы с периферии экземпляра IVPP V13171. Изучено более 200 фрагментов, ...</p>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+            
+            
+            
+
+            <div class="col taxon-card-col" 
+                 data-name="cruralispennia multidonta" 
+                 data-period="ранний мел (готеривский ярус, ~131 млн лет назад)" 
+                 data-location="провинция хэбэй, китай"
+                 data-period-order="9">
+                
+                <div class="card h-100 p-3 d-flex flex-column">
+                    
+                    
+                    
+                    
+                        <a href="data/taxon_43.html">
+                            <img src="static/media_archive/Cruralispennia/Cruralispennia_r.jpg" 
+                                 class="card-img-top mb-3 rounded" 
+                                 style="height: 200px; object-fit: cover; width: 100%;" 
+                                 alt="Реконструкция Cruralispennia multidonta">
+                        </a>
+                    
+
+                    <div class="flex-grow-1">
+                        <h5 class="card-title font-italic">
+                            <a href="data/taxon_43.html" class="text-decoration-none text-dark">Cruralispennia multidonta</a>
+                        </h5>
+                        
+                        <p class="mb-1 small text-muted">Ранний мел (готеривский ярус, ~131 млн лет назад) | Провинция Хэбэй, Китай</p>
+                        <p class="mt-2 small mb-0">Для изучения окраски было взято 5 проб с разных частей образца IVPP V21711: области возле черепа, левого и правого крыла...</p>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+            
+            
+            
+
+            <div class="col taxon-card-col" 
+                 data-name="diplodocus sp. (детеныш)" 
+                 data-period="поздняя юра (титонский ярус, ~150–145 млн лет назад)" 
+                 data-location="сша (штат монтана)"
+                 data-period-order="8">
+                
+                <div class="card h-100 p-3 d-flex flex-column">
+                    
+                    
+                    
+                    
+                        <a href="data/taxon_12.html">
+                            <img src="static/media_archive/Diplodocus/Diplodocus_r.jpeg" 
+                                 class="card-img-top mb-3 rounded" 
+                                 style="height: 200px; object-fit: cover; width: 100%;" 
+                                 alt="Реконструкция Diplodocus sp. (детеныш)">
+                        </a>
+                    
+
+                    <div class="flex-grow-1">
+                        <h5 class="card-title font-italic">
+                            <a href="data/taxon_12.html" class="text-decoration-none text-dark">Diplodocus sp. (детеныш)</a>
+                        </h5>
+                        
+                        <p class="mb-1 small text-muted">Поздняя юра (титонский ярус, ~150–145 млн лет назад) | США (штат Монтана)</p>
+                        <p class="mt-2 small mb-0">В исследовании Gallagher et al., 2025 изучены экземпляры CMC VP 20857, CMC VP 20858, CMC VP 15915, CMC VP 10660, VP 1066...</p>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+            
+            
+            
+
+            <div class="col taxon-card-col" 
+                 data-name="edmontosaurus annectens" 
+                 data-period="поздний мел (маастрихтский ярус, ~68–66 млн лет назад)" 
+                 data-location="сша (северная дакота, вайоминг, монтана)"
+                 data-period-order="9">
+                
+                <div class="card h-100 p-3 d-flex flex-column">
+                    
+                    
+                    
+                    
+                        <a href="data/taxon_41.html">
+                            <img src="static/media_archive/Edmontosaurus/Edmontosaurus_r.png" 
+                                 class="card-img-top mb-3 rounded" 
+                                 style="height: 200px; object-fit: cover; width: 100%;" 
+                                 alt="Реконструкция Edmontosaurus annectens">
+                        </a>
+                    
+
+                    <div class="flex-grow-1">
+                        <h5 class="card-title font-italic">
+                            <a href="data/taxon_41.html" class="text-decoration-none text-dark">Edmontosaurus annectens</a>
+                        </h5>
+                        
+                        <p class="mb-1 small text-muted">Поздний мел (маастрихтский ярус, ~68–66 млн лет назад) | США (Северная Дакота, Вайоминг, Монтана)</p>
+                        <p class="mt-2 small mb-0">На сегодняшний день найдено как минимум 5 ископаемых образцов эдмонтозавров (например, AMNH 5060, SMF R 4036 и NDGS 2000...</p>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+            
+            
+            
+
+            <div class="col taxon-card-col" 
+                 data-name="enantiornithes indet. из бирманского янтаря (птенцы)" 
+                 data-period="середина мела (сеноманский ярус, ~99 млн лет назад)" 
+                 data-location="мьянма (штат качин, долина хуконг)"
+                 data-period-order="9">
+                
+                <div class="card h-100 p-3 d-flex flex-column">
+                    
+                    
+                    
+                    
+                        <a href="data/taxon_48.html">
+                            <img src="static/media_archive/Enantiornithes/Enantiornithes_r.png" 
+                                 class="card-img-top mb-3 rounded" 
+                                 style="height: 200px; object-fit: cover; width: 100%;" 
+                                 alt="Реконструкция Enantiornithes indet. из бирманского янтаря (птенцы)">
+                        </a>
+                    
+
+                    <div class="flex-grow-1">
+                        <h5 class="card-title font-italic">
+                            <a href="data/taxon_48.html" class="text-decoration-none text-dark">Enantiornithes indet. из бирманского янтаря (птенцы)</a>
+                        </h5>
+                        
+                        <p class="mb-1 small text-muted">Середина мела (сеноманский ярус, ~99 млн лет назад) | Мьянма (штат Качин, долина Хуконг)</p>
+                        <p class="mt-2 small mb-0">В бирманском янтаре найдены части птичьих крыльев и целый птенец энанциорниса. Визуальный анализ сохранившейся пигментац...</p>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+            
+            
+            
+
+            <div class="col taxon-card-col" 
+                 data-name="eoconfuciusornis" 
+                 data-period="ранний мел (готеривский ярус, ~131 млн лет назад)" 
+                 data-location="провинция хэбэй, китай"
+                 data-period-order="9">
+                
+                <div class="card h-100 p-3 d-flex flex-column">
+                    
+                    
+                    
+                    
+                        <a href="data/taxon_28.html">
+                            <img src="static/media_archive/Eoconfuciusornis/Eoconfuciusornis_r.png" 
+                                 class="card-img-top mb-3 rounded" 
+                                 style="height: 200px; object-fit: cover; width: 100%;" 
+                                 alt="Реконструкция Eoconfuciusornis">
+                        </a>
+                    
+
+                    <div class="flex-grow-1">
+                        <h5 class="card-title font-italic">
+                            <a href="data/taxon_28.html" class="text-decoration-none text-dark">Eoconfuciusornis</a>
+                        </h5>
+                        
+                        <p class="mb-1 small text-muted">Ранний мел (готеривский ярус, ~131 млн лет назад) | Провинция Хэбэй, Китай</p>
+                        <p class="mt-2 small mb-0">Для исследования окраски образца эоконфуциусорниса STM7-144 было взято 24 пробы из разных участков тела: с крыльев, хвос...</p>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+            
+            
+            
+
+            <div class="col taxon-card-col" 
+                 data-name="hadrosauridae indet. (экз. ypmpu 016969)" 
+                 data-period=" поздний мел" 
+                 data-location="сша"
+                 data-period-order="9">
+                
+                <div class="card h-100 p-3 d-flex flex-column">
+                    
+                    
+                    
+                    
+                        <a href="data/taxon_39.html">
+                            <img src="static/media_archive/Hadrosauridae/Hadrosauridae_r.png" 
+                                 class="card-img-top mb-3 rounded" 
+                                 style="height: 200px; object-fit: cover; width: 100%;" 
+                                 alt="Реконструкция Hadrosauridae indet. (экз. YPMPU 016969)">
+                        </a>
+                    
+
+                    <div class="flex-grow-1">
+                        <h5 class="card-title font-italic">
+                            <a href="data/taxon_39.html" class="text-decoration-none text-dark">Hadrosauridae indet. (экз. YPMPU 016969)</a>
+                        </h5>
+                        
+                        <p class="mb-1 small text-muted"> Поздний мел | США</p>
+                        <p class="mt-2 small mb-0">Сканирующая электронная микроскопия фрагмента кожи образца YPMPU 016969 показала аморфный органический слой без сохранен...</p>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+            
+            
+            
+
+            <div class="col taxon-card-col" 
+                 data-name="huadanosaurus sinensis" 
+                 data-period=" ранний мел (~124 млн лет назад)" 
+                 data-location="провинция ляонин, китай"
+                 data-period-order="9">
+                
+                <div class="card h-100 p-3 d-flex flex-column">
+                    
+                    
+                    
+                    
+                        <a href="data/taxon_6.html">
+                            <img src="static/media_archive/Huadanosaurus/Huadanosaurus_r.png" 
+                                 class="card-img-top mb-3 rounded" 
+                                 style="height: 200px; object-fit: cover; width: 100%;" 
+                                 alt="Реконструкция Huadanosaurus sinensis">
+                        </a>
+                    
+
+                    <div class="flex-grow-1">
+                        <h5 class="card-title font-italic">
+                            <a href="data/taxon_6.html" class="text-decoration-none text-dark">Huadanosaurus sinensis</a>
+                        </h5>
+                        
+                        <p class="mb-1 small text-muted"> Ранний мел (~124 млн лет назад) | Провинция Ляонин, Китай</p>
+                        <p class="mt-2 small mb-0">Тело животного было покрыто нитевидным оперением. На хвосте чередовались светлые (вероятно, белые) и темные полосы. Темн...</p>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+            
+            
+            
+
+            <div class="col taxon-card-col" 
+                 data-name="iteravis huchzermeyeri" 
+                 data-period="ранний мел (аптский ярус, ~120 млн лет назад)" 
+                 data-location="провинция ляонин, китай"
+                 data-period-order="9">
+                
+                <div class="card h-100 p-3 d-flex flex-column">
+                    
+                    
+                    
+                    
+                        <a href="data/taxon_45.html">
+                            <img src="static/media_archive/Iteravis/Iteravis_r.png" 
+                                 class="card-img-top mb-3 rounded" 
+                                 style="height: 200px; object-fit: cover; width: 100%;" 
+                                 alt="Реконструкция Iteravis huchzermeyeri">
+                        </a>
+                    
+
+                    <div class="flex-grow-1">
+                        <h5 class="card-title font-italic">
+                            <a href="data/taxon_45.html" class="text-decoration-none text-dark">Iteravis huchzermeyeri</a>
+                        </h5>
+                        
+                        <p class="mb-1 small text-muted">Ранний мел (аптский ярус, ~120 млн лет назад) | Провинция Ляонин, Китай</p>
+                        <p class="mt-2 small mb-0">Пробы для исследования окраски Iteravis huchzermeyeri взяты с двух участков образца AGB5841: контурное перо (грудь) и ма...</p>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+            
+            
+            
+
+            <div class="col taxon-card-col" 
+                 data-name="marrella splendens" 
+                 data-period="средний кембрий (~508 млн лет назад)" 
+                 data-location="канада (британская колумбия)"
+                 data-period-order="1">
+                
+                <div class="card h-100 p-3 d-flex flex-column">
+                    
+                    
+                    
+                    
+                        <a href="data/taxon_19.html">
+                            <img src="static/media_archive/Marrella/Marrella_r.png" 
+                                 class="card-img-top mb-3 rounded" 
+                                 style="height: 200px; object-fit: cover; width: 100%;" 
+                                 alt="Реконструкция Marrella splendens">
+                        </a>
+                    
+
+                    <div class="flex-grow-1">
+                        <h5 class="card-title font-italic">
+                            <a href="data/taxon_19.html" class="text-decoration-none text-dark">Marrella splendens</a>
+                        </h5>
+                        
+                        <p class="mb-1 small text-muted">Средний кембрий (~508 млн лет назад) | Канада (Британская Колумбия)</p>
+                        <p class="mt-2 small mb-0">Электронная микроскопия образца AM F38262 выявила наличие параллельных микроскопических бороздок на наружных выростах го...</p>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+            
+            
+            
+
+            <div class="col taxon-card-col" 
+                 data-name="megalograptus ohioensis" 
+                 data-period="поздний ордовик (~450 млн лет назад)" 
+                 data-location="сша (штат огайо)"
+                 data-period-order="2">
+                
+                <div class="card h-100 p-3 d-flex flex-column">
+                    
+                    
+                    
+                    
+                        <a href="data/taxon_21.html">
+                            <img src="static/media_archive/Megalograptus/Megalograptus_r.png" 
+                                 class="card-img-top mb-3 rounded" 
+                                 style="height: 200px; object-fit: cover; width: 100%;" 
+                                 alt="Реконструкция Megalograptus ohioensis">
+                        </a>
+                    
+
+                    <div class="flex-grow-1">
+                        <h5 class="card-title font-italic">
+                            <a href="data/taxon_21.html" class="text-decoration-none text-dark">Megalograptus ohioensis</a>
+                        </h5>
+                        
+                        <p class="mb-1 small text-muted">Поздний ордовик (~450 млн лет назад) | США (штат Огайо)</p>
+                        <p class="mt-2 small mb-0">В статье Caster & Kjellesvig-Waering (1964) описана прижизненная окраска ракоскорпиона Megalograptus ohioensis. Органиче...</p>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+            
+            
+            
+
+            <div class="col taxon-card-col" 
+                 data-name="microraptor sp." 
+                 data-period="ранний мел (аптский ярус, ~120 млн лет назад)" 
+                 data-location="провинция ляонин, китай"
+                 data-period-order="9">
+                
+                <div class="card h-100 p-3 d-flex flex-column">
+                    
+                    
+                    
+                    
+                        <a href="data/taxon_4.html">
+                            <img src="static/media_archive/Microraptor/Microraptor_r.jpg" 
+                                 class="card-img-top mb-3 rounded" 
+                                 style="height: 200px; object-fit: cover; width: 100%;" 
+                                 alt="Реконструкция Microraptor sp.">
+                        </a>
+                    
+
+                    <div class="flex-grow-1">
+                        <h5 class="card-title font-italic">
+                            <a href="data/taxon_4.html" class="text-decoration-none text-dark">Microraptor sp.</a>
+                        </h5>
+                        
+                        <p class="mb-1 small text-muted">Ранний мел (аптский ярус, ~120 млн лет назад) | Провинция Ляонин, Китай</p>
+                        <p class="mt-2 small mb-0">Для поиска меланосом в образце BMNHC PH881 исследовано 26 проб с перьев по всему телу. Установлено, что микрораптор имел...</p>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+            
+            
+            
+
+            <div class="col taxon-card-col" 
+                 data-name="platecarpus tympaniticus" 
+                 data-period="поздний мел (~84-81 млн лет назад)" 
+                 data-location="сша (штат канзас)"
+                 data-period-order="9">
+                
+                <div class="card h-100 p-3 d-flex flex-column">
+                    
+                    
+                    
+                    
+                        <a href="data/taxon_31.html">
+                            <img src="static/media_archive/Platecarpus/Platecarpus_r.png" 
+                                 class="card-img-top mb-3 rounded" 
+                                 style="height: 200px; object-fit: cover; width: 100%;" 
+                                 alt="Реконструкция Platecarpus tympaniticus">
+                        </a>
+                    
+
+                    <div class="flex-grow-1">
+                        <h5 class="card-title font-italic">
+                            <a href="data/taxon_31.html" class="text-decoration-none text-dark">Platecarpus tympaniticus</a>
+                        </h5>
+                        
+                        <p class="mb-1 small text-muted">Поздний мел (~84-81 млн лет назад) | США (штат Канзас)</p>
+                        <p class="mt-2 small mb-0">В области глаз образца LACM 128319 были обнаружены сохранившиеся меланосомы. Сами меланосомы не дают информации о цвете ...</p>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+            
+            
+            
+
+            <div class="col taxon-card-col" 
+                 data-name="protopteryx fengningensis" 
+                 data-period="ранний мел (готеривский ярус, 131 млн лет назад)" 
+                 data-location="провинция хэбэй, китай"
+                 data-period-order="9">
+                
+                <div class="card h-100 p-3 d-flex flex-column">
+                    
+                    
+                    
+                    
+                        <a href="data/taxon_44.html">
+                            <img src="static/media_archive/Protopteryx/Protopteryx_r.png" 
+                                 class="card-img-top mb-3 rounded" 
+                                 style="height: 200px; object-fit: cover; width: 100%;" 
+                                 alt="Реконструкция Protopteryx fengningensis">
+                        </a>
+                    
+
+                    <div class="flex-grow-1">
+                        <h5 class="card-title font-italic">
+                            <a href="data/taxon_44.html" class="text-decoration-none text-dark">Protopteryx fengningensis</a>
+                        </h5>
+                        
+                        <p class="mb-1 small text-muted">Ранний мел (готеривский ярус, 131 млн лет назад) | Провинция Хэбэй, Китай</p>
+                        <p class="mt-2 small mb-0">При исследовании образца STM7-143 взята проба с дистального (дальнего от тела) конца одного из внешних маховых перьев пр...</p>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+            
+            
+            
+
+            <div class="col taxon-card-col" 
+                 data-name="psittacosaurus sp." 
+                 data-period="ранний мел (~125 млн лет назад)" 
+                 data-location="провинция ляонин, китай"
+                 data-period-order="9">
+                
+                <div class="card h-100 p-3 d-flex flex-column">
+                    
+                    
+                    
+                    
+                        <a href="data/taxon_3.html">
+                            <img src="static/media_archive/Psittacosaurus/Psittacosaurus_r.jpeg" 
+                                 class="card-img-top mb-3 rounded" 
+                                 style="height: 200px; object-fit: cover; width: 100%;" 
+                                 alt="Реконструкция Psittacosaurus sp.">
+                        </a>
+                    
+
+                    <div class="flex-grow-1">
+                        <h5 class="card-title font-italic">
+                            <a href="data/taxon_3.html" class="text-decoration-none text-dark">Psittacosaurus sp.</a>
+                        </h5>
+                        
+                        <p class="mb-1 small text-muted">Ранний мел (~125 млн лет назад) | Провинция Ляонин, Китай</p>
+                        <p class="mt-2 small mb-0">Исследования экземпляра SMF R 4970 позволили восстановить окраску всего тела животного кроме небольшой части спины и щет...</p>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+            
+            
+            
+
+            <div class="col taxon-card-col" 
+                 data-name="pterorhynchus wellnhoferi" 
+                 data-period="юра (~164–160 млн лет)" 
+                 data-location="китай (внутренняя монголия)"
+                 data-period-order="8">
+                
+                <div class="card h-100 p-3 d-flex flex-column">
+                    
+                    
+                    
+                    
+                        <a href="data/taxon_30.html">
+                            <img src="static/media_archive/Pterorhynchus/Pterorhynchus_r.png" 
+                                 class="card-img-top mb-3 rounded" 
+                                 style="height: 200px; object-fit: cover; width: 100%;" 
+                                 alt="Реконструкция Pterorhynchus wellnhoferi">
+                        </a>
+                    
+
+                    <div class="flex-grow-1">
+                        <h5 class="card-title font-italic">
+                            <a href="data/taxon_30.html" class="text-decoration-none text-dark">Pterorhynchus wellnhoferi</a>
+                        </h5>
+                        
+                        <p class="mb-1 small text-muted">Юра (~164–160 млн лет) | Китай (Внутренняя Монголия)</p>
+                        <p class="mt-2 small mb-0">На гребне образца CAGS02-IG-gausa-2/M 608 птерозавра Pterorhynchus wellnhoferi сохранились следы, образующие цветовой уз...</p>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+            
+            
+            
+
+            <div class="col taxon-card-col" 
+                 data-name="saurolophus angustirostris" 
+                 data-period="поздний мел (маастрихтский ярус, ~70 млн лет назад)" 
+                 data-location="монголия (пустыня гоби)"
+                 data-period-order="9">
+                
+                <div class="card h-100 p-3 d-flex flex-column">
+                    
+                    
+                    
+                    
+                        <a href="data/taxon_37.html">
+                            <img src="static/media_archive/Saurolophus/Saurolophus_angustirostris_r.png" 
+                                 class="card-img-top mb-3 rounded" 
+                                 style="height: 200px; object-fit: cover; width: 100%;" 
+                                 alt="Реконструкция Saurolophus angustirostris">
+                        </a>
+                    
+
+                    <div class="flex-grow-1">
+                        <h5 class="card-title font-italic">
+                            <a href="data/taxon_37.html" class="text-decoration-none text-dark">Saurolophus angustirostris</a>
+                        </h5>
+                        
+                        <p class="mb-1 small text-muted">Поздний мел (маастрихтский ярус, ~70 млн лет назад) | Монголия (пустыня Гоби)</p>
+                        <p class="mt-2 small mb-0">На хвосте динозавра обнаружено чередование зон разной чешуи, откуда делается вывод, что он, вероятнее всего, имел вертик...</p>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+            
+            
+            
+
+            <div class="col taxon-card-col" 
+                 data-name="saurolophus osborni" 
+                 data-period="поздний мел (маастрихтский ярус, ~70 млн лет назад)" 
+                 data-location="канада (провинция альберта)"
+                 data-period-order="9">
+                
+                <div class="card h-100 p-3 d-flex flex-column">
+                    
+                    
+                    
+                    
+                        <a href="data/taxon_38.html">
+                            <img src="static/media_archive/Saurolophus/Saurolophus_osborni_r.png" 
+                                 class="card-img-top mb-3 rounded" 
+                                 style="height: 200px; object-fit: cover; width: 100%;" 
+                                 alt="Реконструкция Saurolophus osborni">
+                        </a>
+                    
+
+                    <div class="flex-grow-1">
+                        <h5 class="card-title font-italic">
+                            <a href="data/taxon_38.html" class="text-decoration-none text-dark">Saurolophus osborni</a>
+                        </h5>
+                        
+                        <p class="mb-1 small text-muted">Поздний мел (маастрихтский ярус, ~70 млн лет назад) | Канада (провинция Альберта)</p>
+                        <p class="mt-2 small mb-0">На ископаемой коже хвоста динозавра разные по размеру чешуйки группируются в хаотичные мозаичные узоры. Предполагается, ...</p>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+            
+            
+            
+
+            <div class="col taxon-card-col" 
+                 data-name="serikornis sungei" 
+                 data-period="поздняя юра (оксфордский ярус, ~160 млн лет назад)" 
+                 data-location="провинция ляонин, китай"
+                 data-period-order="8">
+                
+                <div class="card h-100 p-3 d-flex flex-column">
+                    
+                    
+                    
+                    
+                        <a href="data/taxon_40.html">
+                            <img src="static/media_archive/Serikornis/Serikornis_r.png" 
+                                 class="card-img-top mb-3 rounded" 
+                                 style="height: 200px; object-fit: cover; width: 100%;" 
+                                 alt="Реконструкция Serikornis sungei">
+                        </a>
+                    
+
+                    <div class="flex-grow-1">
+                        <h5 class="card-title font-italic">
+                            <a href="data/taxon_40.html" class="text-decoration-none text-dark">Serikornis sungei</a>
+                        </h5>
+                        
+                        <p class="mb-1 small text-muted">Поздняя юра (оксфордский ярус, ~160 млн лет назад) | Провинция Ляонин, Китай</p>
+                        <p class="mt-2 small mb-0">Окраска Serikornis sungei больше обсуждается в СМИ, чем в научных публикациях. В статье Lefèvre et al. (2017), где описа...</p>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+            
+            
+            
+
+            <div class="col taxon-card-col" 
+                 data-name="shangyang sp." 
+                 data-period="ранний мел (аптский ярус, ~120 млн лет назад)" 
+                 data-location="провинция ляонин, китай"
+                 data-period-order="9">
+                
+                <div class="card h-100 p-3 d-flex flex-column">
+                    
+                    
+                    
+                    
+                        <a href="data/taxon_46.html">
+                            <img src="static/media_archive/Shangyang/Shangyang_r.png" 
+                                 class="card-img-top mb-3 rounded" 
+                                 style="height: 200px; object-fit: cover; width: 100%;" 
+                                 alt="Реконструкция Shangyang sp.">
+                        </a>
+                    
+
+                    <div class="flex-grow-1">
+                        <h5 class="card-title font-italic">
+                            <a href="data/taxon_46.html" class="text-decoration-none text-dark">Shangyang sp.</a>
+                        </h5>
+                        
+                        <p class="mb-1 small text-muted">Ранний мел (аптский ярус, ~120 млн лет назад) | Провинция Ляонин, Китай</p>
+                        <p class="mt-2 small mb-0">У образца IVPP V26899 исследована окраска хохолка. Плотная асимметричная упаковка найденных в нем палочковидных меланосо...</p>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+            
+            
+            
+
+            <div class="col taxon-card-col" 
+                 data-name="sinopterus dongi" 
+                 data-period="ранний мел (~120 млн лет)" 
+                 data-location="провинция ляонин, китай"
+                 data-period-order="9">
+                
+                <div class="card h-100 p-3 d-flex flex-column">
+                    
+                    
+                    
+                    
+                        <a href="data/taxon_11.html">
+                            <img src="static/media_archive/Sinopterus/Sinopterus_r.png" 
+                                 class="card-img-top mb-3 rounded" 
+                                 style="height: 200px; object-fit: cover; width: 100%;" 
+                                 alt="Реконструкция Sinopterus dongi">
+                        </a>
+                    
+
+                    <div class="flex-grow-1">
+                        <h5 class="card-title font-italic">
+                            <a href="data/taxon_11.html" class="text-decoration-none text-dark">Sinopterus dongi</a>
+                        </h5>
+                        
+                        <p class="mb-1 small text-muted">Ранний мел (~120 млн лет) | Провинция Ляонин, Китай</p>
+                        <p class="mt-2 small mb-0">В работе Wu et al., 2026 изучен образец CUGB-P2201 птерозавра Sinopterus dongi. Исследователи сообщают о слоистом внутре...</p>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+            
+            
+            
+
+            <div class="col taxon-card-col" 
+                 data-name="sinornithosaurus millenii" 
+                 data-period="ранний мел (~125 млн лет назад)" 
+                 data-location="провинция ляонин, китай"
+                 data-period-order="9">
+                
+                <div class="card h-100 p-3 d-flex flex-column">
+                    
+                    
+                    
+                    
+                        <a href="data/taxon_7.html">
+                            <img src="static/media_archive/Sinornithosaurus/Sinornithosaurus_sr.jpeg" 
+                                 class="card-img-top mb-3 rounded" 
+                                 style="height: 200px; object-fit: cover; width: 100%;" 
+                                 alt="Реконструкция Sinornithosaurus millenii">
+                        </a>
+                    
+
+                    <div class="flex-grow-1">
+                        <h5 class="card-title font-italic">
+                            <a href="data/taxon_7.html" class="text-decoration-none text-dark">Sinornithosaurus millenii</a>
+                        </h5>
+                        
+                        <p class="mb-1 small text-muted">Ранний мел (~125 млн лет назад) | Провинция Ляонин, Китай</p>
+                        <p class="mt-2 small mb-0">В образце IVPP V12811 были обнаружены скопления как эумеланосом (отвечающих за черный/серый цвет), так и феомеланосом (о...</p>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+            
+            
+            
+
+            <div class="col taxon-card-col" 
+                 data-name="sinosauropteryx prima" 
+                 data-period="ранний мел (барремский / аптский ярус, ~124 млн лет назад)" 
+                 data-location="провинция ляонин, китай"
+                 data-period-order="9">
+                
+                <div class="card h-100 p-3 d-flex flex-column">
+                    
+                    
+                    
+                    
+                        <a href="data/taxon_5.html">
+                            <img src="static/media_archive/Sinosauropteryx/Sinosauropteryx_r.jpeg" 
+                                 class="card-img-top mb-3 rounded" 
+                                 style="height: 200px; object-fit: cover; width: 100%;" 
+                                 alt="Реконструкция Sinosauropteryx prima">
+                        </a>
+                    
+
+                    <div class="flex-grow-1">
+                        <h5 class="card-title font-italic">
+                            <a href="data/taxon_5.html" class="text-decoration-none text-dark">Sinosauropteryx prima</a>
+                        </h5>
+                        
+                        <p class="mb-1 small text-muted">Ранний мел (барремский / аптский ярус, ~124 млн лет назад) | Провинция Ляонин, Китай</p>
+                        <p class="mt-2 small mb-0">Окраска животного служила камуфляжем на открытой местности. Спина была темной, а живот — светлым. Хвост был украшен конт...</p>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+            
+            
+            
+
+            <div class="col taxon-card-col" 
+                 data-name="stenopterygius sp." 
+                 data-period="ранняя юра (~180 млн лет назад)" 
+                 data-location="германия (баден-вюртемберг)"
+                 data-period-order="8">
+                
+                <div class="card h-100 p-3 d-flex flex-column">
+                    
+                    
+                    
+                    
+                        <a href="data/taxon_15.html">
+                            <img src="static/media_archive/Stenopterygius/Stenopterygius_r.png" 
+                                 class="card-img-top mb-3 rounded" 
+                                 style="height: 200px; object-fit: cover; width: 100%;" 
+                                 alt="Реконструкция Stenopterygius sp.">
+                        </a>
+                    
+
+                    <div class="flex-grow-1">
+                        <h5 class="card-title font-italic">
+                            <a href="data/taxon_15.html" class="text-decoration-none text-dark">Stenopterygius sp.</a>
+                        </h5>
+                        
+                        <p class="mb-1 small text-muted">Ранняя юра (~180 млн лет назад) | Германия (Баден-Вюртемберг)</p>
+                        <p class="mt-2 small mb-0">Окраска ихтиозавров исследовалась несколько раз. Сначала в Lindgren et al. (2014) был изучен хвост образца YORYM 1993.33...</p>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+            
+            
+            
+
+            <div class="col taxon-card-col" 
+                 data-name="tupandactylus imperator" 
+                 data-period="ранний мел (аптский ярус, ~115 млн лет назад)" 
+                 data-location="бразилия (штат сеара)"
+                 data-period-order="9">
+                
+                <div class="card h-100 p-3 d-flex flex-column">
+                    
+                    
+                    
+                    
+                        <a href="data/taxon_24.html">
+                            <img src="static/media_archive/Tupandactylus/Tupandactylus_r.png" 
+                                 class="card-img-top mb-3 rounded" 
+                                 style="height: 200px; object-fit: cover; width: 100%;" 
+                                 alt="Реконструкция Tupandactylus imperator">
+                        </a>
+                    
+
+                    <div class="flex-grow-1">
+                        <h5 class="card-title font-italic">
+                            <a href="data/taxon_24.html" class="text-decoration-none text-dark">Tupandactylus imperator</a>
+                        </h5>
+                        
+                        <p class="mb-1 small text-muted">Ранний мел (аптский ярус, ~115 млн лет назад) | Бразилия (штат Сеара)</p>
+                        <p class="mt-2 small mb-0">Исследование Tupandactylus imperator (MCT.R.1884) из раннемеловой формации Крато в Бразилии показало, что форма меланосо...</p>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+            
+            
+            
+
+            <div class="col taxon-card-col" 
+                 data-name="tylosaurus nepaeolicus" 
+                 data-period="поздний мел (~85-80 млн лет назад)" 
+                 data-location="сша (штат канзас)"
+                 data-period-order="9">
+                
+                <div class="card h-100 p-3 d-flex flex-column">
+                    
+                    
+                    
+                    
+                        <a href="data/taxon_16.html">
+                            <img src="static/media_archive/Tylosaurus/Tylosaurus_r.png" 
+                                 class="card-img-top mb-3 rounded" 
+                                 style="height: 200px; object-fit: cover; width: 100%;" 
+                                 alt="Реконструкция Tylosaurus nepaeolicus">
+                        </a>
+                    
+
+                    <div class="flex-grow-1">
+                        <h5 class="card-title font-italic">
+                            <a href="data/taxon_16.html" class="text-decoration-none text-dark">Tylosaurus nepaeolicus</a>
+                        </h5>
+                        
+                        <p class="mb-1 small text-muted">Поздний мел (~85-80 млн лет назад) | США (штат Канзас)</p>
+                        <p class="mt-2 small mb-0">В чешуе экземпляра SMU 76532, принадлежащего мозазавру Tylosaurus nepaeolicus, обнаружены структуры, по форме и размерам...</p>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+            
+            
+            
+
+            <div class="col taxon-card-col" 
+                 data-name="wiwaxia corrugata" 
+                 data-period="средний кембрий (~508 млн лет назад)" 
+                 data-location="канада (британская колумбия)"
+                 data-period-order="1">
+                
+                <div class="card h-100 p-3 d-flex flex-column">
+                    
+                    
+                    
+                    
+                        <a href="data/taxon_17.html">
+                            <img src="static/media_archive/Wiwaxia/Wiwaxia_r.png" 
+                                 class="card-img-top mb-3 rounded" 
+                                 style="height: 200px; object-fit: cover; width: 100%;" 
+                                 alt="Реконструкция Wiwaxia corrugata">
+                        </a>
+                    
+
+                    <div class="flex-grow-1">
+                        <h5 class="card-title font-italic">
+                            <a href="data/taxon_17.html" class="text-decoration-none text-dark">Wiwaxia corrugata</a>
+                        </h5>
+                        
+                        <p class="mb-1 small text-muted">Средний кембрий (~508 млн лет назад) | Канада (Британская Колумбия)</p>
+                        <p class="mt-2 small mb-0">В работе Parker (1998) исследовано несколько образцов Wiwaxia corrugata. На поверхности склеритов были выявлены параллел...</p>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+            
+            
+            
+
+            <div class="col taxon-card-col" 
+                 data-name="wulong bohaiensis (молодая особь)" 
+                 data-period="ранний мел (аптский ярус, ~120 млн лет назад)" 
+                 data-location="провинция ляонин, китай"
+                 data-period-order="9">
+                
+                <div class="card h-100 p-3 d-flex flex-column">
+                    
+                    
+                    
+                    
+                        <a href="data/taxon_14.html">
+                            <img src="static/media_archive/Wulong/Wulong_r.png" 
+                                 class="card-img-top mb-3 rounded" 
+                                 style="height: 200px; object-fit: cover; width: 100%;" 
+                                 alt="Реконструкция Wulong bohaiensis (молодая особь)">
+                        </a>
+                    
+
+                    <div class="flex-grow-1">
+                        <h5 class="card-title font-italic">
+                            <a href="data/taxon_14.html" class="text-decoration-none text-dark">Wulong bohaiensis (молодая особь)</a>
+                        </h5>
+                        
+                        <p class="mb-1 small text-muted">Ранний мел (аптский ярус, ~120 млн лет назад) | Провинция Ляонин, Китай</p>
+                        <p class="mt-2 small mb-0">Croudace et al. (2023) изучили образец DNHM D2933 годовалой особи Wulong bohaiensis. Образцы с предплечий и голеней пред...</p>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+            
+            
+            
+
+            <div class="col taxon-card-col" 
+                 data-name="yi qi" 
+                 data-period="средняя–поздняя юра (~160 млн лет назад)" 
+                 data-location="провинция хэбэй, китай"
+                 data-period-order="8">
+                
+                <div class="card h-100 p-3 d-flex flex-column">
+                    
+                    
+                    
+                    
+                        <a href="data/taxon_10.html">
+                            <img src="static/media_archive/Yi qi/Yi_r.png" 
+                                 class="card-img-top mb-3 rounded" 
+                                 style="height: 200px; object-fit: cover; width: 100%;" 
+                                 alt="Реконструкция Yi qi">
+                        </a>
+                    
+
+                    <div class="flex-grow-1">
+                        <h5 class="card-title font-italic">
+                            <a href="data/taxon_10.html" class="text-decoration-none text-dark">Yi qi</a>
+                        </h5>
+                        
+                        <p class="mb-1 small text-muted">Средняя–поздняя юра (~160 млн лет назад) | Провинция Хэбэй, Китай</p>
+                        <p class="mt-2 small mb-0">Yi qi впервые описан в публикации Xu et al. (2015) по образцу STM 31-2. Для исследования меланосом в перьях взяты пробы ...</p>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+            
+            
+            
+
+            <div class="col taxon-card-col" 
+                 data-name="yuanchuavis kompsosoura" 
+                 data-period="ранний мел (аптский ярус, ~120 млн лет назад)" 
+                 data-location="провинция ляонин, китай"
+                 data-period-order="9">
+                
+                <div class="card h-100 p-3 d-flex flex-column">
+                    
+                    
+                    
+                    
+                        <a href="data/taxon_13.html">
+                            <img src="static/media_archive/Yuanchuavis/Yuanchuavis_r.png" 
+                                 class="card-img-top mb-3 rounded" 
+                                 style="height: 200px; object-fit: cover; width: 100%;" 
+                                 alt="Реконструкция Yuanchuavis kompsosoura">
+                        </a>
+                    
+
+                    <div class="flex-grow-1">
+                        <h5 class="card-title font-italic">
+                            <a href="data/taxon_13.html" class="text-decoration-none text-dark">Yuanchuavis kompsosoura</a>
+                        </h5>
+                        
+                        <p class="mb-1 small text-muted">Ранний мел (аптский ярус, ~120 млн лет назад) | Провинция Ляонин, Китай</p>
+                        <p class="mt-2 small mb-0">В Wang et al. (2021) изучены меланосомы в хвостовых перьях образца IVPP V27883. Хвост птицы имел контрастную окраску. Дв...</p>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+            
+            
+            
+
+            <div class="col taxon-card-col" 
+                 data-name="аммониты" 
+                 data-period="триас, юра, мел" 
+                 data-location="глобальное распространение (россия, сша, мадагаскар, франция, польша и др.)"
+                 data-period-order="7">
+                
+                <div class="card h-100 p-3 d-flex flex-column">
+                    
+                    
+                    
+                    
+                        <a href="data/taxon_47.html">
+                            <img src="static/media_archive/Ammonoid/Ammonoid_r.png" 
+                                 class="card-img-top mb-3 rounded" 
+                                 style="height: 200px; object-fit: cover; width: 100%;" 
+                                 alt="Реконструкция Аммониты">
+                        </a>
+                    
+
+                    <div class="flex-grow-1">
+                        <h5 class="card-title font-italic">
+                            <a href="data/taxon_47.html" class="text-decoration-none text-dark">Аммониты</a>
+                        </h5>
+                        
+                        <p class="mb-1 small text-muted">Триас, юра, мел | Глобальное распространение (Россия, США, Мадагаскар, Франция, Польша и др.)</p>
+                        <p class="mt-2 small mb-0">В обзоре Mapes и Larson (2015) обобщены все известные на тот момент случаи сохранения окраски у аммоноидей, охватывающие...</p>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+            
+            
+            
+
+            <div class="col taxon-card-col" 
+                 data-name="мезозойские млекопитающие" 
+                 data-period="юра, мел" 
+                 data-location="китай"
+                 data-period-order="8">
+                
+                <div class="card h-100 p-3 d-flex flex-column">
+                    
+                    
+                    
+                    
+                        <a href="data/taxon_36.html">
+                            <img src="static/media_archive/Mesozoic mammaliaforms/Mesozoic mammaliaforms_r.jpg" 
+                                 class="card-img-top mb-3 rounded" 
+                                 style="height: 200px; object-fit: cover; width: 100%;" 
+                                 alt="Реконструкция Мезозойские млекопитающие">
+                        </a>
+                    
+
+                    <div class="flex-grow-1">
+                        <h5 class="card-title font-italic">
+                            <a href="data/taxon_36.html" class="text-decoration-none text-dark">Мезозойские млекопитающие</a>
+                        </h5>
+                        
+                        <p class="mb-1 small text-muted">Юра, мел | Китай</p>
+                        <p class="mt-2 small mb-0">В работе Li et al. (2025) исследована окраска 6 мезозойских видов млекопитающих: юрские Arboroharamiya fuscus, Vilevolod...</p>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+            
+            
+            
+
+            <div class="col taxon-card-col" 
+                 data-name="прямораковинные головоногие" 
+                 data-period="ордовик, силур, девон, карбон, пермь, триас" 
+                 data-location="глобальное распространение (швеция, чехия, сша и др.)"
+                 data-period-order="2">
+                
+                <div class="card h-100 p-3 d-flex flex-column">
+                    
+                    
+                    
+                    
+                        <a href="data/taxon_34.html">
+                            <img src="static/media_archive/Cephalopods/Cephalopods_r1.png" 
+                                 class="card-img-top mb-3 rounded" 
+                                 style="height: 200px; object-fit: cover; width: 100%;" 
+                                 alt="Реконструкция Прямораковинные головоногие">
+                        </a>
+                    
+
+                    <div class="flex-grow-1">
+                        <h5 class="card-title font-italic">
+                            <a href="data/taxon_34.html" class="text-decoration-none text-dark">Прямораковинные головоногие</a>
+                        </h5>
+                        
+                        <p class="mb-1 small text-muted">Ордовик, силур, девон, карбон, пермь, триас | Глобальное распространение (Швеция, Чехия, США и др.)</p>
+                        <p class="mt-2 small mb-0">На данный момент найдено множество раковин прямораковинных головоногих моллюсков со следами прижизненной окраски. Они пр...</p>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+            
+            
+            
+
+            <div class="col taxon-card-col" 
+                 data-name="скорлупа яиц" 
+                 data-period="мел" 
+                 data-location="сша, китай, монголия, аргентина, франция"
+                 data-period-order="9">
+                
+                <div class="card h-100 p-3 d-flex flex-column">
+                    
+                    
+                    
+                    
+                        <a href="data/taxon_32.html">
+                            <img src="static/media_archive/Eggs/Heyuannia_eggs_r.png" 
+                                 class="card-img-top mb-3 rounded" 
+                                 style="height: 200px; object-fit: cover; width: 100%;" 
+                                 alt="Реконструкция Скорлупа яиц">
+                        </a>
+                    
+
+                    <div class="flex-grow-1">
+                        <h5 class="card-title font-italic">
+                            <a href="data/taxon_32.html" class="text-decoration-none text-dark">Скорлупа яиц</a>
+                        </h5>
+                        
+                        <p class="mb-1 small text-muted">Мел | США, Китай, Монголия, Аргентина, Франция</p>
+                        <p class="mt-2 small mb-0">В работе Wiemann et al. (2015) исследуется окраска яичной скорлупы овирапторида Heyuannia huangi по молекулярным маркера...</p>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+            
+            
+            
+
+            <div class="col taxon-card-col" 
+                 data-name="слабо изменившиеся животные" 
+                 data-period="девон, карбон, пермь, триас, юра, мел" 
+                 data-location=" глобальное распространение (сша, китай, германия, великобритания и др.)"
+                 data-period-order="4">
+                
+                <div class="card h-100 p-3 d-flex flex-column">
+                    
+                    
+                    
+                    
+                        <a href="data/taxon_35.html">
+                            <img src="static/media_archive/Same_as_modern/Same_as_modern_r.png" 
+                                 class="card-img-top mb-3 rounded" 
+                                 style="height: 200px; object-fit: cover; width: 100%;" 
+                                 alt="Реконструкция Слабо изменившиеся животные">
+                        </a>
+                    
+
+                    <div class="flex-grow-1">
+                        <h5 class="card-title font-italic">
+                            <a href="data/taxon_35.html" class="text-decoration-none text-dark">Слабо изменившиеся животные</a>
+                        </h5>
+                        
+                        <p class="mb-1 small text-muted">Девон, карбон, пермь, триас, юра, мел |  Глобальное распространение (США, Китай, Германия, Великобритания и др.)</p>
+                        <p class="mt-2 small mb-0">Чешуя многих ископаемых рыб сохранила прижизненные паттерны окраски. У мезозойских насекомых (например, сетчатокрылых на...</p>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+            
+            
+            
+
+            <div class="col taxon-card-col" 
+                 data-name="трилобиты" 
+                 data-period="кембрий, ордовик, силур, девон, карбон" 
+                 data-location="глобальное распространение (сша, германия, россия и др.)"
+                 data-period-order="1">
+                
+                <div class="card h-100 p-3 d-flex flex-column">
+                    
+                    
+                    
+                    
+                        <a href="data/taxon_33.html">
+                            <img src="static/media_archive/Trilobites/Trilobites_r.png" 
+                                 class="card-img-top mb-3 rounded" 
+                                 style="height: 200px; object-fit: cover; width: 100%;" 
+                                 alt="Реконструкция Трилобиты">
+                        </a>
+                    
+
+                    <div class="flex-grow-1">
+                        <h5 class="card-title font-italic">
+                            <a href="data/taxon_33.html" class="text-decoration-none text-dark">Трилобиты</a>
+                        </h5>
+                        
+                        <p class="mb-1 small text-muted">Кембрий, ордовик, силур, девон, карбон | Глобальное распространение (США, Германия, Россия и др.)</p>
+                        <p class="mt-2 small mb-0">У многих видов трилобитов на панцирях и задних хвостовых щитах (пигидиях) задокументированы прижизненные узоры в виде те...</p>
+                    </div>
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+<script>
+function isLatin(str) {
+    return /^[a-z]/i.test(str);
+}
+
+function compareAlphabetical(a, b) {
+    const isLatA = isLatin(a);
+    const isLatB = isLatin(b);
+
+    if (isLatA && !isLatB) return -1;
+    if (!isLatA && isLatB) return 1;
+
+    return a.localeCompare(b, 'ru', { sensitivity: 'base' });
+}
+
+function filterAndSort() {
+    const nameVal = document.getElementById('searchName').value.toLowerCase().trim();
+    const periodVal = document.getElementById('searchPeriod').value.toLowerCase().trim();
+    const countryVal = document.getElementById('searchCountry').value.toLowerCase().trim();
+    const sortBy = document.getElementById('sortBy').value;
+
+    const container = document.getElementById('cardsContainer');
+    const cols = Array.from(container.children);
+
+    cols.forEach(col => {
+        const name = col.getAttribute('data-name') || '';
+        const period = col.getAttribute('data-period') || '';
+        const location = col.getAttribute('data-location') || '';
+
+        const matchName = !nameVal || name.includes(nameVal);
+        const matchPeriod = !periodVal || period.includes(periodVal);
+        const matchCountry = !countryVal || location.includes(countryVal);
+
+        if (matchName && matchPeriod && matchCountry) {
+            col.style.display = '';
+        } else {
+            col.style.display = 'none';
+        }
+    });
+
+    cols.sort((a, b) => {
+        const nameA = a.getAttribute('data-name');
+        const nameB = b.getAttribute('data-name');
+
+        if (sortBy === 'period') {
+            const orderA = parseInt(a.getAttribute('data-period-order')) || 10;
+            const orderB = parseInt(b.getAttribute('data-period-order')) || 10;
+            if (orderA !== orderB) {
+                return orderA - orderB;
+            }
+        }
+        
+        return compareAlphabetical(nameA, nameB);
+    });
+
+    cols.forEach(col => container.appendChild(col));
+}
+
+document.addEventListener('DOMContentLoaded', filterAndSort);
+</script>
+
+    </div>
+    
+    <footer class="text-center mt-auto py-4 border-top">
+        <p class="text-muted small mb-0">&copy; Справочник по окраске докайнозойских ископаемых животных</p>
+    </footer>
+
+    <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content border-0 shadow-lg">
+      
+         <div class="modal-header text-white" style="background-color: #1a252f;">
+            <h5 class="modal-title font-italic" id="infoModalLabel">
+                Справочник по окраске докайнозойских ископаемых животных
+            </h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+          </div>
+      
+          <div class="modal-body p-4" style="line-height: 1.7;">
+            <p>
+                Здесь собраны данные о животных, существовавших на Земле до начала кайнозойской эры, чья окраска в той или иной степени известна ученым. Приводится короткая справка по каждому из них, даются ссылки на оригинальные исследования и, если их материалы имеют открытый доступ, прилагаются PDF-файлы статей. Также здесь представлены художественные реконструкции животных, иллюстрации, показывающие их прижизненные размеры и фотографии окаменелостей.
+            </p>
+        
+            <p>
+                Справочник содержит представителей каждого периода от кембрийского до мелового. Их окраска изучалась множеством методов: от наиболее известного анализа меланосом (клеток, содержащих пигмент, по форме которых можно определить цвет) оперенных динозавров до прямого наблюдения прижизненных цветов птиц из бирманского янтаря, анализа дифракционных решеток на щетинках кембрийских полихет или предсказания цветовых паттернов по морфологии чешуи мумий эдмонтозавров из США.
+            </p>
+
+            <hr class="my-4">
+
+            <div class="p-3 rounded mb-3" style="background-color: #f8f9fa; border-left: 4px solid #1a252f;">
+                <p class="mb-0">
+                    Вы можете установить себе <a href="https://github.com/DmitryLashinMSU/PaleoColorDB" target="_blank" rel="noopener noreferrer" class="fw-bold text-decoration-none">локальную версию справочника</a>, которую можно пополнять и редактировать без доступа в Интернет.
+                </p>
+            </div>
+
+            <p class="mb-0 text-muted small">
+                При возникновении вопросов пишите по адресу 
+                <a href="mailto:lashinda@my.msu.ru" class="text-decoration-none fw-bold">lashinda@my.msu.ru</a>.
+            </p>
+          </div>
+      
+          <div class="modal-footer bg-light d-flex justify-content-between align-items-center">
+            <small class="text-muted">
+                <em>Последнее обновление: 30 июля 2026 г.</em>
+            </small>
+            <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Закрыть</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content bg-transparent border-0">
+          <div class="modal-body d-flex justify-content-center position-relative pt-4">
+            <div class="position-relative d-inline-block">
+                <button type="button" class="btn-close btn-close-white position-absolute" data-bs-dismiss="modal" style="top: 0; right: 0; transform: translate(calc(100% + 5px), calc(-100% - 5px)); z-index: 1055;"></button>
+                <img id="modalImage" src="" class="img-fluid rounded shadow" style="max-height: 85vh;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        var imageModal = document.getElementById('imageModal');
+        if(imageModal) {
+            imageModal.addEventListener('show.bs.modal', function (event) {
+              var triggerImg = event.relatedTarget;
+              document.getElementById('modalImage').setAttribute('src', triggerImg.getAttribute('src'));
+            });
+        }
+      });
+    </script>
+</body>
+</html>
