@@ -1,0 +1,1936 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PaleoColor DB</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-lg navbar-dark mb-4 sticky-top" style="background-color: #1a252f;">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">PaleoColor</a>
+            
+            <div class="d-flex align-items-center">
+                <button type="button" class="btn btn-outline-info btn-sm fw-bold me-3" data-bs-toggle="modal" data-bs-target="#infoModal">
+                    About
+                </button>
+                
+                <div class="text-white fw-bold me-3">
+                    <a href="../ru/index.html" class="text-decoration-none text-light">RU</a> | 
+                    <a href="index.html" class="text-decoration-none text-warning">EN</a>
+                </div>
+
+                
+           </div>
+        </div>
+    </nav>
+    
+    <div class="container flex-grow-1">
+        
+<div class="row">
+    <div class="col-md-3">
+        <div class="card p-3 mb-4 sticky-search">
+            <h5 class="mb-3">Search</h5>
+            <form id="searchForm" onsubmit="event.preventDefault(); filterAndSort();">
+                
+                <div class="mb-2">
+                    <label for="searchName" class="form-label small">Name</label>
+                    <input type="text" id="searchName" class="form-control form-control-sm">
+                </div>
+                
+                <div class="mb-2">
+                    <label for="searchPeriod" class="form-label small">Period</label>
+                    <input type="text" id="searchPeriod" class="form-control form-control-sm">
+                </div>
+                
+                <div class="mb-2">
+                    <label for="searchCountry" class="form-label small">Country</label>
+                    <input type="text" id="searchCountry" class="form-control form-control-sm">
+                </div>
+                
+                <div class="mb-3">
+                    <label for="sortBy" class="form-label small">Sort by</label>
+                    <select id="sortBy" class="form-select form-select-sm">
+                        <option value="name" selected>A-Z</option>
+                        <option value="period">By period (Cambrian to Cretaceous)</option>
+                    </select>
+                </div>
+                
+                <button type="submit" class="btn btn-dark w-100 btn-sm">Search</button>
+            </form>
+        </div>
+    </div>
+    
+    <div class="col-md-9">
+        <div class="row row-cols-1 row-cols-md-2 g-4" id="cardsContainer">
+            
+            
+            
+            
+            
+
+            <div class="col taxon-card-col" 
+                 data-name="anchiornis huxleyi" 
+                 data-period="late jurassic (~160 million years ago)" 
+                 data-location="liaoning province, china"
+                 data-period-order="8">
+                
+                <div class="card h-100 p-3 d-flex flex-column">
+                    
+                    
+                    
+                    
+                        <a href="taxon_1.html">
+                            <img src="../static/media_archive/Anchiornis/Anchiornis_r.jpg" 
+                                 class="card-img-top mb-3 rounded" 
+                                 style="height: 200px; object-fit: cover; width: 100%;" 
+                                 alt="Реконструкция Anchiornis huxleyi">
+                        </a>
+                    
+
+                    <div class="flex-grow-1">
+                        <h5 class="card-title font-italic">
+                            <a href="taxon_1.html" class="text-decoration-none text-dark">Anchiornis huxleyi</a>
+                        </h5>
+                        
+                        <p class="mb-1 small text-muted">Late Jurassic (~160 million years ago) | Liaoning Province, China</p>
+                        <p class="mt-2 small mb-0">In Li et al. (2010), 29 plumage regions of specimen BMNHC PH828 were examined, reconstructing the animal&#39;s coloration th...</p>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+            
+            
+            
+
+            <div class="col taxon-card-col" 
+                 data-name="anurognathidae" 
+                 data-period="middle–late jurassic (~164–160 million years ago)" 
+                 data-location="inner mongolia and liaoning province, china"
+                 data-period-order="8">
+                
+                <div class="card h-100 p-3 d-flex flex-column">
+                    
+                    
+                    
+                    
+                        <a href="taxon_20.html">
+                            <img src="../static/media_archive/Anurognathidae/Anurognathidae_r1.png" 
+                                 class="card-img-top mb-3 rounded" 
+                                 style="height: 200px; object-fit: cover; width: 100%;" 
+                                 alt="Реконструкция Anurognathidae">
+                        </a>
+                    
+
+                    <div class="flex-grow-1">
+                        <h5 class="card-title font-italic">
+                            <a href="taxon_20.html" class="text-decoration-none text-dark">Anurognathidae</a>
+                        </h5>
+                        
+                        <p class="mb-1 small text-muted">Middle–Late Jurassic (~164–160 million years ago) | Inner Mongolia and Liaoning Province, China</p>
+                        <p class="mt-2 small mb-0">Scanning electron microscopy of two anurognathid pterosaur specimens (NJU-57003 and CAGS-Z070) revealed densely packed m...</p>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+            
+            
+            
+
+            <div class="col taxon-card-col" 
+                 data-name="archaeopteryx lithographica" 
+                 data-period="late jurassic (~150 million years ago)" 
+                 data-location="bavaria, germany"
+                 data-period-order="8">
+                
+                <div class="card h-100 p-3 d-flex flex-column">
+                    
+                    
+                    
+                    
+                        <a href="taxon_23.html">
+                            <img src="../static/media_archive/Archaeopteryx/Archaeopteryx_r.png" 
+                                 class="card-img-top mb-3 rounded" 
+                                 style="height: 200px; object-fit: cover; width: 100%;" 
+                                 alt="Реконструкция Archaeopteryx lithographica">
+                        </a>
+                    
+
+                    <div class="flex-grow-1">
+                        <h5 class="card-title font-italic">
+                            <a href="taxon_23.html" class="text-decoration-none text-dark">Archaeopteryx lithographica</a>
+                        </h5>
+                        
+                        <p class="mb-1 small text-muted">Late Jurassic (~150 million years ago) | Bavaria, Germany</p>
+                        <p class="mt-2 small mb-0">Several studies have investigated the plumage coloration of Archaeopteryx. Based on the distribution of trace copper (a ...</p>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+            
+            
+            
+
+            <div class="col taxon-card-col" 
+                 data-name="beipiaosaurus" 
+                 data-period="early cretaceous (~125 million years ago)" 
+                 data-location="liaoning province, china"
+                 data-period-order="9">
+                
+                <div class="card h-100 p-3 d-flex flex-column">
+                    
+                    
+                    
+                    
+                        <a href="taxon_26.html">
+                            <img src="../static/media_archive/Beipiaosaurus/Beipiaosaurus_r.png" 
+                                 class="card-img-top mb-3 rounded" 
+                                 style="height: 200px; object-fit: cover; width: 100%;" 
+                                 alt="Реконструкция Beipiaosaurus">
+                        </a>
+                    
+
+                    <div class="flex-grow-1">
+                        <h5 class="card-title font-italic">
+                            <a href="taxon_26.html" class="text-decoration-none text-dark">Beipiaosaurus</a>
+                        </h5>
+                        
+                        <p class="mb-1 small text-muted">Early Cretaceous (~125 million years ago) | Liaoning Province, China</p>
+                        <p class="mt-2 small mb-0">The morphology of melanosomes identified in fossilized feathers from the neck region of specimen BMNHC PH000911 indicate...</p>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+            
+            
+            
+
+            <div class="col taxon-card-col" 
+                 data-name="bohaiornithid (cugb p1202)" 
+                 data-period="early cretaceous (~120 million years ago)" 
+                 data-location="liaoning province, china"
+                 data-period-order="9">
+                
+                <div class="card h-100 p-3 d-flex flex-column">
+                    
+                    
+                    
+                    
+                        <a href="taxon_29.html">
+                            <img src="../static/media_archive/CUGB P1202/CUGB P1202_r.png" 
+                                 class="card-img-top mb-3 rounded" 
+                                 style="height: 200px; object-fit: cover; width: 100%;" 
+                                 alt="Реконструкция Bohaiornithid (CUGB P1202)">
+                        </a>
+                    
+
+                    <div class="flex-grow-1">
+                        <h5 class="card-title font-italic">
+                            <a href="taxon_29.html" class="text-decoration-none text-dark">Bohaiornithid (CUGB P1202)</a>
+                        </h5>
+                        
+                        <p class="mb-1 small text-muted">Early Cretaceous (~120 million years ago) | Liaoning Province, China</p>
+                        <p class="mt-2 small mb-0">Melanosome analysis of specimen CUGB P1202 demonstrated that contour feathers on the head, nape, and trunk possessed str...</p>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+            
+            
+            
+
+            <div class="col taxon-card-col" 
+                 data-name="borealopelta markmitchelli" 
+                 data-period="early cretaceous (~110 million years ago)" 
+                 data-location="alberta, canada"
+                 data-period-order="9">
+                
+                <div class="card h-100 p-3 d-flex flex-column">
+                    
+                    
+                    
+                    
+                        <a href="taxon_9.html">
+                            <img src="../static/media_archive/Borealopelta/Borealopelta_sr.jpeg" 
+                                 class="card-img-top mb-3 rounded" 
+                                 style="height: 200px; object-fit: cover; width: 100%;" 
+                                 alt="Реконструкция Borealopelta markmitchelli">
+                        </a>
+                    
+
+                    <div class="flex-grow-1">
+                        <h5 class="card-title font-italic">
+                            <a href="taxon_9.html" class="text-decoration-none text-dark">Borealopelta markmitchelli</a>
+                        </h5>
+                        
+                        <p class="mb-1 small text-muted">Early Cretaceous (~110 million years ago) | Alberta, Canada</p>
+                        <p class="mt-2 small mb-0">In Brown et al. (2017), specimen TMP 2011.033.0001 was investigated. A total of 147 samples were taken across various pa...</p>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+            
+            
+            
+
+            <div class="col taxon-card-col" 
+                 data-name="caihong juji" 
+                 data-period="late jurassic (~161 million years ago)" 
+                 data-location="hebei province, china"
+                 data-period-order="8">
+                
+                <div class="card h-100 p-3 d-flex flex-column">
+                    
+                    
+                    
+                    
+                        <a href="taxon_2.html">
+                            <img src="../static/media_archive/Caihong/Caihong_r.jpg" 
+                                 class="card-img-top mb-3 rounded" 
+                                 style="height: 200px; object-fit: cover; width: 100%;" 
+                                 alt="Реконструкция Caihong juji">
+                        </a>
+                    
+
+                    <div class="flex-grow-1">
+                        <h5 class="card-title font-italic">
+                            <a href="taxon_2.html" class="text-decoration-none text-dark">Caihong juji</a>
+                        </h5>
+                        
+                        <p class="mb-1 small text-muted">Late Jurassic (~161 million years ago) | Hebei Province, China</p>
+                        <p class="mt-2 small mb-0">In Hu et al. (2018), a melanosome analysis was conducted across 66 plumage regions of specimen PMoL-B00175. According to...</p>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+            
+            
+            
+
+            <div class="col taxon-card-col" 
+                 data-name="canadia spinosa" 
+                 data-period="cambrian epoch 2 (~508 million years ago)" 
+                 data-location="british columbia, canada"
+                 data-period-order="1">
+                
+                <div class="card h-100 p-3 d-flex flex-column">
+                    
+                    
+                    
+                    
+                        <a href="taxon_18.html">
+                            <img src="../static/media_archive/Canadia/Canadia_r.png" 
+                                 class="card-img-top mb-3 rounded" 
+                                 style="height: 200px; object-fit: cover; width: 100%;" 
+                                 alt="Реконструкция Canadia spinosa">
+                        </a>
+                    
+
+                    <div class="flex-grow-1">
+                        <h5 class="card-title font-italic">
+                            <a href="taxon_18.html" class="text-decoration-none text-dark">Canadia spinosa</a>
+                        </h5>
+                        
+                        <p class="mb-1 small text-muted">Cambrian Epoch 2 (~508 million years ago) | British Columbia, Canada</p>
+                        <p class="mt-2 small mb-0">On the bristles of specimen USNM 202335, belonging to the polychaete worm Canadia spinosa, parallel grooves with a unifo...</p>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+            
+            
+            
+
+            <div class="col taxon-card-col" 
+                 data-name="carcinosoma newlini" 
+                 data-period="late silurian (~420 million years ago)" 
+                 data-location="indiana, usa"
+                 data-period-order="3">
+                
+                <div class="card h-100 p-3 d-flex flex-column">
+                    
+                    
+                    
+                    
+                        <a href="taxon_22.html">
+                            <img src="../static/media_archive/Carcinosoma/Carcinosoma_r.png" 
+                                 class="card-img-top mb-3 rounded" 
+                                 style="height: 200px; object-fit: cover; width: 100%;" 
+                                 alt="Реконструкция Carcinosoma newlini">
+                        </a>
+                    
+
+                    <div class="flex-grow-1">
+                        <h5 class="card-title font-italic">
+                            <a href="taxon_22.html" class="text-decoration-none text-dark">Carcinosoma newlini</a>
+                        </h5>
+                        
+                        <p class="mb-1 small text-muted">Late Silurian (~420 million years ago) | Indiana, USA</p>
+                        <p class="mt-2 small mb-0">Kjellesvig-Waering (1958) described a specimen of the eurypterid Carcinosoma newlini from the Kokomo Dolomite that prese...</p>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+            
+            
+            
+
+            <div class="col taxon-card-col" 
+                 data-name="caudipteryx zoui" 
+                 data-period="early cretaceous (~125 million years ago)" 
+                 data-location="liaoning province, china"
+                 data-period-order="9">
+                
+                <div class="card h-100 p-3 d-flex flex-column">
+                    
+                    
+                    
+                    
+                        <a href="taxon_27.html">
+                            <img src="../static/media_archive/Caudipteryx/Caudipteryx_r.png" 
+                                 class="card-img-top mb-3 rounded" 
+                                 style="height: 200px; object-fit: cover; width: 100%;" 
+                                 alt="Реконструкция Caudipteryx zoui">
+                        </a>
+                    
+
+                    <div class="flex-grow-1">
+                        <h5 class="card-title font-italic">
+                            <a href="taxon_27.html" class="text-decoration-none text-dark">Caudipteryx zoui</a>
+                        </h5>
+                        
+                        <p class="mb-1 small text-muted">Early Cretaceous (~125 million years ago) | Liaoning Province, China</p>
+                        <p class="mt-2 small mb-0">Analysis of fossilized feathers across several body regions indicates a predominantly dark (black or dark grey) overall ...</p>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+            
+            
+            
+
+            <div class="col taxon-card-col" 
+                 data-name="changzuiornis ahgmi" 
+                 data-period="early cretaceous (~122 million years ago)" 
+                 data-location="liaoning province, china"
+                 data-period-order="9">
+                
+                <div class="card h-100 p-3 d-flex flex-column">
+                    
+                    
+                    
+                    
+                        <a href="taxon_25.html">
+                            <img src="../static/media_archive/Changzuiornis/Changzuiornis_r.png" 
+                                 class="card-img-top mb-3 rounded" 
+                                 style="height: 200px; object-fit: cover; width: 100%;" 
+                                 alt="Реконструкция Changzuiornis ahgmi">
+                        </a>
+                    
+
+                    <div class="flex-grow-1">
+                        <h5 class="card-title font-italic">
+                            <a href="taxon_25.html" class="text-decoration-none text-dark">Changzuiornis ahgmi</a>
+                        </h5>
+                        
+                        <p class="mb-1 small text-muted">Early Cretaceous (~122 million years ago) | Liaoning Province, China</p>
+                        <p class="mt-2 small mb-0">Analysis of melanosome impressions revealed elongated structures within the wing and tail plumage, indicating that these...</p>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+            
+            
+            
+
+            <div class="col taxon-card-col" 
+                 data-name="coelurosauria indet. (dip-v-15103)" 
+                 data-period="mid-cretaceous (~99 million years ago)" 
+                 data-location="kachin state (hukawng valley), myanmar"
+                 data-period-order="9">
+                
+                <div class="card h-100 p-3 d-flex flex-column">
+                    
+                    
+                    
+                    
+                        <a href="taxon_42.html">
+                            <img src="../static/media_archive/DIP-V-15103/DIP-V-15103_r.jpg" 
+                                 class="card-img-top mb-3 rounded" 
+                                 style="height: 200px; object-fit: cover; width: 100%;" 
+                                 alt="Реконструкция Coelurosauria indet. (DIP-V-15103)">
+                        </a>
+                    
+
+                    <div class="flex-grow-1">
+                        <h5 class="card-title font-italic">
+                            <a href="taxon_42.html" class="text-decoration-none text-dark">Coelurosauria indet. (DIP-V-15103)</a>
+                        </h5>
+                        
+                        <p class="mb-1 small text-muted">Mid-Cretaceous (~99 million years ago) | Kachin State (Hukawng Valley), Myanmar</p>
+                        <p class="mt-2 small mb-0">A section of the feathered tail of a juvenile coelurosaurian dinosaur (specimen DIP-V-15103) was discovered entombed in ...</p>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+            
+            
+            
+
+            <div class="col taxon-card-col" 
+                 data-name="confuciusornis sanctus" 
+                 data-period="early cretaceous (~125 million years ago)" 
+                 data-location="liaoning province, china"
+                 data-period-order="9">
+                
+                <div class="card h-100 p-3 d-flex flex-column">
+                    
+                    
+                    
+                    
+                        <a href="taxon_8.html">
+                            <img src="../static/media_archive/Confuciusornis/Confuciusornis_r1.png" 
+                                 class="card-img-top mb-3 rounded" 
+                                 style="height: 200px; object-fit: cover; width: 100%;" 
+                                 alt="Реконструкция Confuciusornis sanctus">
+                        </a>
+                    
+
+                    <div class="flex-grow-1">
+                        <h5 class="card-title font-italic">
+                            <a href="taxon_8.html" class="text-decoration-none text-dark">Confuciusornis sanctus</a>
+                        </h5>
+                        
+                        <p class="mb-1 small text-muted">Early Cretaceous (~125 million years ago) | Liaoning Province, China</p>
+                        <p class="mt-2 small mb-0">In a study by Zhang et al. (2010), samples were taken from the periphery of specimen IVPP V13171. Of the more than 200 f...</p>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+            
+            
+            
+
+            <div class="col taxon-card-col" 
+                 data-name="cruralispennia multidonta" 
+                 data-period="early cretaceous (~131 million years ago)" 
+                 data-location="hebei province, china"
+                 data-period-order="9">
+                
+                <div class="card h-100 p-3 d-flex flex-column">
+                    
+                    
+                    
+                    
+                        <a href="taxon_43.html">
+                            <img src="../static/media_archive/Cruralispennia/Cruralispennia_r.jpg" 
+                                 class="card-img-top mb-3 rounded" 
+                                 style="height: 200px; object-fit: cover; width: 100%;" 
+                                 alt="Реконструкция Cruralispennia multidonta">
+                        </a>
+                    
+
+                    <div class="flex-grow-1">
+                        <h5 class="card-title font-italic">
+                            <a href="taxon_43.html" class="text-decoration-none text-dark">Cruralispennia multidonta</a>
+                        </h5>
+                        
+                        <p class="mb-1 small text-muted">Early Cretaceous (~131 million years ago) | Hebei Province, China</p>
+                        <p class="mt-2 small mb-0">To assess plumage coloration, five samples were gathered from distinct regions of specimen IVPP V21711: the cranial area...</p>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+            
+            
+            
+
+            <div class="col taxon-card-col" 
+                 data-name="diplodocus sp. (juvenile)" 
+                 data-period="late jurassic (~150–145 million years ago)" 
+                 data-location="montana, usa"
+                 data-period-order="8">
+                
+                <div class="card h-100 p-3 d-flex flex-column">
+                    
+                    
+                    
+                    
+                        <a href="taxon_12.html">
+                            <img src="../static/media_archive/Diplodocus/Diplodocus_r.jpeg" 
+                                 class="card-img-top mb-3 rounded" 
+                                 style="height: 200px; object-fit: cover; width: 100%;" 
+                                 alt="Реконструкция Diplodocus sp. (детеныш)">
+                        </a>
+                    
+
+                    <div class="flex-grow-1">
+                        <h5 class="card-title font-italic">
+                            <a href="taxon_12.html" class="text-decoration-none text-dark">Diplodocus sp. (juvenile)</a>
+                        </h5>
+                        
+                        <p class="mb-1 small text-muted">Late Jurassic (~150–145 million years ago) | Montana, USA</p>
+                        <p class="mt-2 small mb-0">In Gallagher et al. (2025), several skin specimens (CMC VP 20857, CMC VP 20858, CMC VP 15915, CMC VP 10660, VP 10662, an...</p>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+            
+            
+            
+
+            <div class="col taxon-card-col" 
+                 data-name="edmontosaurus annectens" 
+                 data-period="late cretaceous (~68–66 million years ago)" 
+                 data-location="usa (north dakota, wyoming, montana)"
+                 data-period-order="9">
+                
+                <div class="card h-100 p-3 d-flex flex-column">
+                    
+                    
+                    
+                    
+                        <a href="taxon_41.html">
+                            <img src="../static/media_archive/Edmontosaurus/Edmontosaurus_r.png" 
+                                 class="card-img-top mb-3 rounded" 
+                                 style="height: 200px; object-fit: cover; width: 100%;" 
+                                 alt="Реконструкция Edmontosaurus annectens">
+                        </a>
+                    
+
+                    <div class="flex-grow-1">
+                        <h5 class="card-title font-italic">
+                            <a href="taxon_41.html" class="text-decoration-none text-dark">Edmontosaurus annectens</a>
+                        </h5>
+                        
+                        <p class="mb-1 small text-muted">Late Cretaceous (~68–66 million years ago) | USA (North Dakota, Wyoming, Montana)</p>
+                        <p class="mt-2 small mb-0">To date, at least five exceptionally preserved mummified specimens of Edmontosaurus (notably AMNH 5060, SMF R 4036, and ...</p>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+            
+            
+            
+
+            <div class="col taxon-card-col" 
+                 data-name="enantiornithes indet. in burmese amber (hatchlings)" 
+                 data-period="mid-cretaceous (~99 million years ago)" 
+                 data-location="kachin state (hukawng valley), myanmar"
+                 data-period-order="9">
+                
+                <div class="card h-100 p-3 d-flex flex-column">
+                    
+                    
+                    
+                    
+                        <a href="taxon_48.html">
+                            <img src="../static/media_archive/Enantiornithes/Enantiornithes_r.png" 
+                                 class="card-img-top mb-3 rounded" 
+                                 style="height: 200px; object-fit: cover; width: 100%;" 
+                                 alt="Реконструкция Enantiornithes indet. из бирманского янтаря (птенцы)">
+                        </a>
+                    
+
+                    <div class="flex-grow-1">
+                        <h5 class="card-title font-italic">
+                            <a href="taxon_48.html" class="text-decoration-none text-dark">Enantiornithes indet. in Burmese amber (hatchlings)</a>
+                        </h5>
+                        
+                        <p class="mb-1 small text-muted">Mid-Cretaceous (~99 million years ago) | Kachin State (Hukawng Valley), Myanmar</p>
+                        <p class="mt-2 small mb-0">Isolated avian wings and an exceptionally preserved, articulated enantiornithine hatchling have been recovered entombed ...</p>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+            
+            
+            
+
+            <div class="col taxon-card-col" 
+                 data-name="eoconfuciusornis" 
+                 data-period="early cretaceous (~131 million years ago)" 
+                 data-location="hebei province, china"
+                 data-period-order="9">
+                
+                <div class="card h-100 p-3 d-flex flex-column">
+                    
+                    
+                    
+                    
+                        <a href="taxon_28.html">
+                            <img src="../static/media_archive/Eoconfuciusornis/Eoconfuciusornis_r.png" 
+                                 class="card-img-top mb-3 rounded" 
+                                 style="height: 200px; object-fit: cover; width: 100%;" 
+                                 alt="Реконструкция Eoconfuciusornis">
+                        </a>
+                    
+
+                    <div class="flex-grow-1">
+                        <h5 class="card-title font-italic">
+                            <a href="taxon_28.html" class="text-decoration-none text-dark">Eoconfuciusornis</a>
+                        </h5>
+                        
+                        <p class="mb-1 small text-muted">Early Cretaceous (~131 million years ago) | Hebei Province, China</p>
+                        <p class="mt-2 small mb-0">To evaluate the coloration of Eoconfuciusornis specimen STM7-144, 24 plumage samples were collected from various body re...</p>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+            
+            
+            
+
+            <div class="col taxon-card-col" 
+                 data-name="hadrosauridae indet. (specimen ypmpu 016969)" 
+                 data-period="late cretaceous" 
+                 data-location="usa"
+                 data-period-order="9">
+                
+                <div class="card h-100 p-3 d-flex flex-column">
+                    
+                    
+                    
+                    
+                        <a href="taxon_39.html">
+                            <img src="../static/media_archive/Hadrosauridae/Hadrosauridae_r.png" 
+                                 class="card-img-top mb-3 rounded" 
+                                 style="height: 200px; object-fit: cover; width: 100%;" 
+                                 alt="Реконструкция Hadrosauridae indet. (экз. YPMPU 016969)">
+                        </a>
+                    
+
+                    <div class="flex-grow-1">
+                        <h5 class="card-title font-italic">
+                            <a href="taxon_39.html" class="text-decoration-none text-dark">Hadrosauridae indet. (specimen YPMPU 016969)</a>
+                        </h5>
+                        
+                        <p class="mb-1 small text-muted">Late Cretaceous | USA</p>
+                        <p class="mt-2 small mb-0">Scanning electron microscopy of a skin fragment from specimen YPMPU 016969 revealed an amorphous organic layer without p...</p>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+            
+            
+            
+
+            <div class="col taxon-card-col" 
+                 data-name="huadanosaurus sinensis" 
+                 data-period="early cretaceous (~124 million years ago)" 
+                 data-location="liaoning province, china"
+                 data-period-order="9">
+                
+                <div class="card h-100 p-3 d-flex flex-column">
+                    
+                    
+                    
+                    
+                        <a href="taxon_6.html">
+                            <img src="../static/media_archive/Huadanosaurus/Huadanosaurus_r.png" 
+                                 class="card-img-top mb-3 rounded" 
+                                 style="height: 200px; object-fit: cover; width: 100%;" 
+                                 alt="Реконструкция Huadanosaurus sinensis">
+                        </a>
+                    
+
+                    <div class="flex-grow-1">
+                        <h5 class="card-title font-italic">
+                            <a href="taxon_6.html" class="text-decoration-none text-dark">Huadanosaurus sinensis</a>
+                        </h5>
+                        
+                        <p class="mb-1 small text-muted">Early Cretaceous (~124 million years ago) | Liaoning Province, China</p>
+                        <p class="mt-2 small mb-0">The dinosaur&#39;s body was covered in filamentous plumage. Its tail featured alternating light (likely white) and dark band...</p>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+            
+            
+            
+
+            <div class="col taxon-card-col" 
+                 data-name="iteravis huchzermeyeri" 
+                 data-period="early cretaceous (~120 million years ago)" 
+                 data-location="liaoning province, china"
+                 data-period-order="9">
+                
+                <div class="card h-100 p-3 d-flex flex-column">
+                    
+                    
+                    
+                    
+                        <a href="taxon_45.html">
+                            <img src="../static/media_archive/Iteravis/Iteravis_r.png" 
+                                 class="card-img-top mb-3 rounded" 
+                                 style="height: 200px; object-fit: cover; width: 100%;" 
+                                 alt="Реконструкция Iteravis huchzermeyeri">
+                        </a>
+                    
+
+                    <div class="flex-grow-1">
+                        <h5 class="card-title font-italic">
+                            <a href="taxon_45.html" class="text-decoration-none text-dark">Iteravis huchzermeyeri</a>
+                        </h5>
+                        
+                        <p class="mb-1 small text-muted">Early Cretaceous (~120 million years ago) | Liaoning Province, China</p>
+                        <p class="mt-2 small mb-0">Plumage samples for coloration analysis of Iteravis huchzermeyeri were collected from two areas of specimen AGB5841: a c...</p>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+            
+            
+            
+
+            <div class="col taxon-card-col" 
+                 data-name="marrella splendens" 
+                 data-period="cambrian epoch 2 (~508 million years ago)" 
+                 data-location="british columbia, canada"
+                 data-period-order="1">
+                
+                <div class="card h-100 p-3 d-flex flex-column">
+                    
+                    
+                    
+                    
+                        <a href="taxon_19.html">
+                            <img src="../static/media_archive/Marrella/Marrella_r.png" 
+                                 class="card-img-top mb-3 rounded" 
+                                 style="height: 200px; object-fit: cover; width: 100%;" 
+                                 alt="Реконструкция Marrella splendens">
+                        </a>
+                    
+
+                    <div class="flex-grow-1">
+                        <h5 class="card-title font-italic">
+                            <a href="taxon_19.html" class="text-decoration-none text-dark">Marrella splendens</a>
+                        </h5>
+                        
+                        <p class="mb-1 small text-muted">Cambrian Epoch 2 (~508 million years ago) | British Columbia, Canada</p>
+                        <p class="mt-2 small mb-0">Electron microscopy of specimen AM F38262 revealed microscopic parallel grooves on the outer spines of the cephalic shie...</p>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+            
+            
+            
+
+            <div class="col taxon-card-col" 
+                 data-name="megalograptus ohioensis" 
+                 data-period="late ordovician (~450 million years ago)" 
+                 data-location="ohio, usa"
+                 data-period-order="2">
+                
+                <div class="card h-100 p-3 d-flex flex-column">
+                    
+                    
+                    
+                    
+                        <a href="taxon_21.html">
+                            <img src="../static/media_archive/Megalograptus/Megalograptus_r.png" 
+                                 class="card-img-top mb-3 rounded" 
+                                 style="height: 200px; object-fit: cover; width: 100%;" 
+                                 alt="Реконструкция Megalograptus ohioensis">
+                        </a>
+                    
+
+                    <div class="flex-grow-1">
+                        <h5 class="card-title font-italic">
+                            <a href="taxon_21.html" class="text-decoration-none text-dark">Megalograptus ohioensis</a>
+                        </h5>
+                        
+                        <p class="mb-1 small text-muted">Late Ordovician (~450 million years ago) | Ohio, USA</p>
+                        <p class="mt-2 small mb-0">In their article, Caster &amp; Kjellesvig-Waering (1964) described the in-life coloration of the eurypterid Megalograptus oh...</p>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+            
+            
+            
+
+            <div class="col taxon-card-col" 
+                 data-name="microraptor sp." 
+                 data-period="early cretaceous (~120 million years ago)" 
+                 data-location="liaoning province, china"
+                 data-period-order="9">
+                
+                <div class="card h-100 p-3 d-flex flex-column">
+                    
+                    
+                    
+                    
+                        <a href="taxon_4.html">
+                            <img src="../static/media_archive/Microraptor/Microraptor_r.jpg" 
+                                 class="card-img-top mb-3 rounded" 
+                                 style="height: 200px; object-fit: cover; width: 100%;" 
+                                 alt="Реконструкция Microraptor sp.">
+                        </a>
+                    
+
+                    <div class="flex-grow-1">
+                        <h5 class="card-title font-italic">
+                            <a href="taxon_4.html" class="text-decoration-none text-dark">Microraptor sp.</a>
+                        </h5>
+                        
+                        <p class="mb-1 small text-muted">Early Cretaceous (~120 million years ago) | Liaoning Province, China</p>
+                        <p class="mt-2 small mb-0">To analyze melanosomes in specimen BMNHC PH881, 26 feather samples were examined across the entire body. The findings re...</p>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+            
+            
+            
+
+            <div class="col taxon-card-col" 
+                 data-name="platecarpus tympaniticus" 
+                 data-period="late cretaceous (~84–81 million years ago)" 
+                 data-location="kansas, usa"
+                 data-period-order="9">
+                
+                <div class="card h-100 p-3 d-flex flex-column">
+                    
+                    
+                    
+                    
+                        <a href="taxon_31.html">
+                            <img src="../static/media_archive/Platecarpus/Platecarpus_r.png" 
+                                 class="card-img-top mb-3 rounded" 
+                                 style="height: 200px; object-fit: cover; width: 100%;" 
+                                 alt="Реконструкция Platecarpus tympaniticus">
+                        </a>
+                    
+
+                    <div class="flex-grow-1">
+                        <h5 class="card-title font-italic">
+                            <a href="taxon_31.html" class="text-decoration-none text-dark">Platecarpus tympaniticus</a>
+                        </h5>
+                        
+                        <p class="mb-1 small text-muted">Late Cretaceous (~84–81 million years ago) | Kansas, USA</p>
+                        <p class="mt-2 small mb-0">Well-preserved melanosomes were identified within the ocular region of specimen LACM 128319. While melanosomes do not re...</p>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+            
+            
+            
+
+            <div class="col taxon-card-col" 
+                 data-name="protopteryx fengningensis" 
+                 data-period="early cretaceous (~131 million years ago)" 
+                 data-location="hebei province, china"
+                 data-period-order="9">
+                
+                <div class="card h-100 p-3 d-flex flex-column">
+                    
+                    
+                    
+                    
+                        <a href="taxon_44.html">
+                            <img src="../static/media_archive/Protopteryx/Protopteryx_r.png" 
+                                 class="card-img-top mb-3 rounded" 
+                                 style="height: 200px; object-fit: cover; width: 100%;" 
+                                 alt="Реконструкция Protopteryx fengningensis">
+                        </a>
+                    
+
+                    <div class="flex-grow-1">
+                        <h5 class="card-title font-italic">
+                            <a href="taxon_44.html" class="text-decoration-none text-dark">Protopteryx fengningensis</a>
+                        </h5>
+                        
+                        <p class="mb-1 small text-muted">Early Cretaceous (~131 million years ago) | Hebei Province, China</p>
+                        <p class="mt-2 small mb-0">During the examination of specimen STM7-143, a plumage sample was taken from the distal tip of an outer primary flight f...</p>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+            
+            
+            
+
+            <div class="col taxon-card-col" 
+                 data-name="psittacosaurus sp." 
+                 data-period="early cretaceous (~125 million years ago)" 
+                 data-location="liaoning province, china"
+                 data-period-order="9">
+                
+                <div class="card h-100 p-3 d-flex flex-column">
+                    
+                    
+                    
+                    
+                        <a href="taxon_3.html">
+                            <img src="../static/media_archive/Psittacosaurus/Psittacosaurus_r.jpeg" 
+                                 class="card-img-top mb-3 rounded" 
+                                 style="height: 200px; object-fit: cover; width: 100%;" 
+                                 alt="Реконструкция Psittacosaurus sp.">
+                        </a>
+                    
+
+                    <div class="flex-grow-1">
+                        <h5 class="card-title font-italic">
+                            <a href="taxon_3.html" class="text-decoration-none text-dark">Psittacosaurus sp.</a>
+                        </h5>
+                        
+                        <p class="mb-1 small text-muted">Early Cretaceous (~125 million years ago) | Liaoning Province, China</p>
+                        <p class="mt-2 small mb-0">Investigations of specimen SMF R 4970 made it possible to reconstruct the animal&#39;s entire body coloration, with the exce...</p>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+            
+            
+            
+
+            <div class="col taxon-card-col" 
+                 data-name="pterorhynchus wellnhoferi" 
+                 data-period="jurassic (~164–160 million years ago)" 
+                 data-location="inner mongolia, china"
+                 data-period-order="8">
+                
+                <div class="card h-100 p-3 d-flex flex-column">
+                    
+                    
+                    
+                    
+                        <a href="taxon_30.html">
+                            <img src="../static/media_archive/Pterorhynchus/Pterorhynchus_r.png" 
+                                 class="card-img-top mb-3 rounded" 
+                                 style="height: 200px; object-fit: cover; width: 100%;" 
+                                 alt="Реконструкция Pterorhynchus wellnhoferi">
+                        </a>
+                    
+
+                    <div class="flex-grow-1">
+                        <h5 class="card-title font-italic">
+                            <a href="taxon_30.html" class="text-decoration-none text-dark">Pterorhynchus wellnhoferi</a>
+                        </h5>
+                        
+                        <p class="mb-1 small text-muted">Jurassic (~164–160 million years ago) | Inner Mongolia, China</p>
+                        <p class="mt-2 small mb-0">Preserved markings on the cranial crest of pterosaur specimen CAGS02-IG-gausa-2/M 608 (Pterorhynchus wellnhoferi) reveal...</p>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+            
+            
+            
+
+            <div class="col taxon-card-col" 
+                 data-name="saurolophus angustirostris" 
+                 data-period="late cretaceous (~70 million years ago)" 
+                 data-location="gobi desert, mongolia"
+                 data-period-order="9">
+                
+                <div class="card h-100 p-3 d-flex flex-column">
+                    
+                    
+                    
+                    
+                        <a href="taxon_37.html">
+                            <img src="../static/media_archive/Saurolophus/Saurolophus_angustirostris_r.png" 
+                                 class="card-img-top mb-3 rounded" 
+                                 style="height: 200px; object-fit: cover; width: 100%;" 
+                                 alt="Реконструкция Saurolophus angustirostris">
+                        </a>
+                    
+
+                    <div class="flex-grow-1">
+                        <h5 class="card-title font-italic">
+                            <a href="taxon_37.html" class="text-decoration-none text-dark">Saurolophus angustirostris</a>
+                        </h5>
+                        
+                        <p class="mb-1 small text-muted">Late Cretaceous (~70 million years ago) | Gobi desert, Mongolia</p>
+                        <p class="mt-2 small mb-0">Alternating zones of distinctly differentiated scales were discovered along the dinosaur&#39;s tail, leading researchers to ...</p>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+            
+            
+            
+
+            <div class="col taxon-card-col" 
+                 data-name="saurolophus osborni" 
+                 data-period="late cretaceous (~70 million years ago)" 
+                 data-location="alberta, canada"
+                 data-period-order="9">
+                
+                <div class="card h-100 p-3 d-flex flex-column">
+                    
+                    
+                    
+                    
+                        <a href="taxon_38.html">
+                            <img src="../static/media_archive/Saurolophus/Saurolophus_osborni_r.png" 
+                                 class="card-img-top mb-3 rounded" 
+                                 style="height: 200px; object-fit: cover; width: 100%;" 
+                                 alt="Реконструкция Saurolophus osborni">
+                        </a>
+                    
+
+                    <div class="flex-grow-1">
+                        <h5 class="card-title font-italic">
+                            <a href="taxon_38.html" class="text-decoration-none text-dark">Saurolophus osborni</a>
+                        </h5>
+                        
+                        <p class="mb-1 small text-muted">Late Cretaceous (~70 million years ago) | Alberta, Canada</p>
+                        <p class="mt-2 small mb-0">On the fossilized caudal skin of this dinosaur, scales of differing dimensions are arranged into irregular, mosaic-like ...</p>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+            
+            
+            
+
+            <div class="col taxon-card-col" 
+                 data-name="serikornis sungei" 
+                 data-period="late jurassic (~160 million years ago)" 
+                 data-location="liaoning province, china"
+                 data-period-order="8">
+                
+                <div class="card h-100 p-3 d-flex flex-column">
+                    
+                    
+                    
+                    
+                        <a href="taxon_40.html">
+                            <img src="../static/media_archive/Serikornis/Serikornis_r.png" 
+                                 class="card-img-top mb-3 rounded" 
+                                 style="height: 200px; object-fit: cover; width: 100%;" 
+                                 alt="Реконструкция Serikornis sungei">
+                        </a>
+                    
+
+                    <div class="flex-grow-1">
+                        <h5 class="card-title font-italic">
+                            <a href="taxon_40.html" class="text-decoration-none text-dark">Serikornis sungei</a>
+                        </h5>
+                        
+                        <p class="mb-1 small text-muted">Late Jurassic (~160 million years ago) | Liaoning Province, China</p>
+                        <p class="mt-2 small mb-0">The coloration of Serikornis sungei has received more coverage in popular science media than in formal academic literatu...</p>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+            
+            
+            
+
+            <div class="col taxon-card-col" 
+                 data-name="shangyang sp." 
+                 data-period="early cretaceous (~120 million years ago)" 
+                 data-location="liaoning province, china"
+                 data-period-order="9">
+                
+                <div class="card h-100 p-3 d-flex flex-column">
+                    
+                    
+                    
+                    
+                        <a href="taxon_46.html">
+                            <img src="../static/media_archive/Shangyang/Shangyang_r.png" 
+                                 class="card-img-top mb-3 rounded" 
+                                 style="height: 200px; object-fit: cover; width: 100%;" 
+                                 alt="Реконструкция Shangyang sp.">
+                        </a>
+                    
+
+                    <div class="flex-grow-1">
+                        <h5 class="card-title font-italic">
+                            <a href="taxon_46.html" class="text-decoration-none text-dark">Shangyang sp.</a>
+                        </h5>
+                        
+                        <p class="mb-1 small text-muted">Early Cretaceous (~120 million years ago) | Liaoning Province, China</p>
+                        <p class="mt-2 small mb-0">The coloration of the cranial crest plumage in specimen IVPP V26899 was investigated. The densely packed, asymmetric nan...</p>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+            
+            
+            
+
+            <div class="col taxon-card-col" 
+                 data-name="sinopterus dongi" 
+                 data-period="early cretaceous (~120 million years ago)" 
+                 data-location="liaoning province, china"
+                 data-period-order="9">
+                
+                <div class="card h-100 p-3 d-flex flex-column">
+                    
+                    
+                    
+                    
+                        <a href="taxon_11.html">
+                            <img src="../static/media_archive/Sinopterus/Sinopterus_r.png" 
+                                 class="card-img-top mb-3 rounded" 
+                                 style="height: 200px; object-fit: cover; width: 100%;" 
+                                 alt="Реконструкция Sinopterus dongi">
+                        </a>
+                    
+
+                    <div class="flex-grow-1">
+                        <h5 class="card-title font-italic">
+                            <a href="taxon_11.html" class="text-decoration-none text-dark">Sinopterus dongi</a>
+                        </h5>
+                        
+                        <p class="mb-1 small text-muted">Early Cretaceous (~120 million years ago) | Liaoning Province, China</p>
+                        <p class="mt-2 small mb-0">In Wu et al. (2026), pterosaur specimen CUGB-P2201 of Sinopterus dongi was investigated. The researchers reported a laye...</p>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+            
+            
+            
+
+            <div class="col taxon-card-col" 
+                 data-name="sinornithosaurus millenii" 
+                 data-period="early cretaceous (~125 million years ago)" 
+                 data-location="liaoning province, china"
+                 data-period-order="9">
+                
+                <div class="card h-100 p-3 d-flex flex-column">
+                    
+                    
+                    
+                    
+                        <a href="taxon_7.html">
+                            <img src="../static/media_archive/Sinornithosaurus/Sinornithosaurus_sr.jpeg" 
+                                 class="card-img-top mb-3 rounded" 
+                                 style="height: 200px; object-fit: cover; width: 100%;" 
+                                 alt="Реконструкция Sinornithosaurus millenii">
+                        </a>
+                    
+
+                    <div class="flex-grow-1">
+                        <h5 class="card-title font-italic">
+                            <a href="taxon_7.html" class="text-decoration-none text-dark">Sinornithosaurus millenii</a>
+                        </h5>
+                        
+                        <p class="mb-1 small text-muted">Early Cretaceous (~125 million years ago) | Liaoning Province, China</p>
+                        <p class="mt-2 small mb-0">In specimen IVPP V12811, aggregations of both eumelanosomes (responsible for black and grey hues) and pheomelanosomes (r...</p>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+            
+            
+            
+
+            <div class="col taxon-card-col" 
+                 data-name="sinosauropteryx prima" 
+                 data-period="early cretaceous (~124 million years ago)" 
+                 data-location="liaoning province, china"
+                 data-period-order="9">
+                
+                <div class="card h-100 p-3 d-flex flex-column">
+                    
+                    
+                    
+                    
+                        <a href="taxon_5.html">
+                            <img src="../static/media_archive/Sinosauropteryx/Sinosauropteryx_r.jpeg" 
+                                 class="card-img-top mb-3 rounded" 
+                                 style="height: 200px; object-fit: cover; width: 100%;" 
+                                 alt="Реконструкция Sinosauropteryx prima">
+                        </a>
+                    
+
+                    <div class="flex-grow-1">
+                        <h5 class="card-title font-italic">
+                            <a href="taxon_5.html" class="text-decoration-none text-dark">Sinosauropteryx prima</a>
+                        </h5>
+                        
+                        <p class="mb-1 small text-muted">Early Cretaceous (~124 million years ago) | Liaoning Province, China</p>
+                        <p class="mt-2 small mb-0">The dinosaur&#39;s coloration functioned as camouflage suited for open habitats, displaying countershading with a dark dorsu...</p>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+            
+            
+            
+
+            <div class="col taxon-card-col" 
+                 data-name="stenopterygius sp." 
+                 data-period="early jurassic (~180 million years ago)" 
+                 data-location="baden-württemberg, germany"
+                 data-period-order="8">
+                
+                <div class="card h-100 p-3 d-flex flex-column">
+                    
+                    
+                    
+                    
+                        <a href="taxon_15.html">
+                            <img src="../static/media_archive/Stenopterygius/Stenopterygius_r.png" 
+                                 class="card-img-top mb-3 rounded" 
+                                 style="height: 200px; object-fit: cover; width: 100%;" 
+                                 alt="Реконструкция Stenopterygius sp.">
+                        </a>
+                    
+
+                    <div class="flex-grow-1">
+                        <h5 class="card-title font-italic">
+                            <a href="taxon_15.html" class="text-decoration-none text-dark">Stenopterygius sp.</a>
+                        </h5>
+                        
+                        <p class="mb-1 small text-muted">Early Jurassic (~180 million years ago) | Baden-Württemberg, Germany</p>
+                        <p class="mt-2 small mb-0">Ichthyosaur coloration has been investigated in several key studies. Initially, Lindgren et al. (2014) examined the tail...</p>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+            
+            
+            
+
+            <div class="col taxon-card-col" 
+                 data-name="tupandactylus imperator" 
+                 data-period="early cretaceous (~115 million years ago)" 
+                 data-location="ceará, brazil"
+                 data-period-order="9">
+                
+                <div class="card h-100 p-3 d-flex flex-column">
+                    
+                    
+                    
+                    
+                        <a href="taxon_24.html">
+                            <img src="../static/media_archive/Tupandactylus/Tupandactylus_r.png" 
+                                 class="card-img-top mb-3 rounded" 
+                                 style="height: 200px; object-fit: cover; width: 100%;" 
+                                 alt="Реконструкция Tupandactylus imperator">
+                        </a>
+                    
+
+                    <div class="flex-grow-1">
+                        <h5 class="card-title font-italic">
+                            <a href="taxon_24.html" class="text-decoration-none text-dark">Tupandactylus imperator</a>
+                        </h5>
+                        
+                        <p class="mb-1 small text-muted">Early Cretaceous (~115 million years ago) | Ceará, Brazil</p>
+                        <p class="mt-2 small mb-0">An investigation of specimen MCT.R.1884 from the Lower Cretaceous Crato Formation revealed that melanosome morphology va...</p>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+            
+            
+            
+
+            <div class="col taxon-card-col" 
+                 data-name="tylosaurus nepaeolicus" 
+                 data-period="late cretaceous (~85–80 million years ago)" 
+                 data-location="kansas, usa"
+                 data-period-order="9">
+                
+                <div class="card h-100 p-3 d-flex flex-column">
+                    
+                    
+                    
+                    
+                        <a href="taxon_16.html">
+                            <img src="../static/media_archive/Tylosaurus/Tylosaurus_r.png" 
+                                 class="card-img-top mb-3 rounded" 
+                                 style="height: 200px; object-fit: cover; width: 100%;" 
+                                 alt="Реконструкция Tylosaurus nepaeolicus">
+                        </a>
+                    
+
+                    <div class="flex-grow-1">
+                        <h5 class="card-title font-italic">
+                            <a href="taxon_16.html" class="text-decoration-none text-dark">Tylosaurus nepaeolicus</a>
+                        </h5>
+                        
+                        <p class="mb-1 small text-muted">Late Cretaceous (~85–80 million years ago) | Kansas, USA</p>
+                        <p class="mt-2 small mb-0">Within the fossilized scales of specimen SMU 76532, belonging to the mosasaur Tylosaurus nepaeolicus, structures morphol...</p>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+            
+            
+            
+
+            <div class="col taxon-card-col" 
+                 data-name="wiwaxia corrugata" 
+                 data-period="cambrian epoch 2 (~508 million years ago)" 
+                 data-location="british columbia, canada"
+                 data-period-order="1">
+                
+                <div class="card h-100 p-3 d-flex flex-column">
+                    
+                    
+                    
+                    
+                        <a href="taxon_17.html">
+                            <img src="../static/media_archive/Wiwaxia/Wiwaxia_r.png" 
+                                 class="card-img-top mb-3 rounded" 
+                                 style="height: 200px; object-fit: cover; width: 100%;" 
+                                 alt="Реконструкция Wiwaxia corrugata">
+                        </a>
+                    
+
+                    <div class="flex-grow-1">
+                        <h5 class="card-title font-italic">
+                            <a href="taxon_17.html" class="text-decoration-none text-dark">Wiwaxia corrugata</a>
+                        </h5>
+                        
+                        <p class="mb-1 small text-muted">Cambrian Epoch 2 (~508 million years ago) | British Columbia, Canada</p>
+                        <p class="mt-2 small mb-0">In Parker (1998), several specimens of Wiwaxia corrugata were investigated. Microscopic parallel grooves were identified...</p>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+            
+            
+            
+
+            <div class="col taxon-card-col" 
+                 data-name="wulong bohaiensis (juvenile)" 
+                 data-period="early cretaceous (~120 million years ago)" 
+                 data-location="liaoning province, china"
+                 data-period-order="9">
+                
+                <div class="card h-100 p-3 d-flex flex-column">
+                    
+                    
+                    
+                    
+                        <a href="taxon_14.html">
+                            <img src="../static/media_archive/Wulong/Wulong_r.png" 
+                                 class="card-img-top mb-3 rounded" 
+                                 style="height: 200px; object-fit: cover; width: 100%;" 
+                                 alt="Реконструкция Wulong bohaiensis (молодая особь)">
+                        </a>
+                    
+
+                    <div class="flex-grow-1">
+                        <h5 class="card-title font-italic">
+                            <a href="taxon_14.html" class="text-decoration-none text-dark">Wulong bohaiensis (juvenile)</a>
+                        </h5>
+                        
+                        <p class="mb-1 small text-muted">Early Cretaceous (~120 million years ago) | Liaoning Province, China</p>
+                        <p class="mt-2 small mb-0">In Croudace et al. (2023), specimen DNHM D2933, representing a one-year-old juvenile Wulong bohaiensis, was investigated...</p>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+            
+            
+            
+
+            <div class="col taxon-card-col" 
+                 data-name="yi qi" 
+                 data-period="middle–late jurassic (~160 million years ago)" 
+                 data-location="hebei province, china"
+                 data-period-order="8">
+                
+                <div class="card h-100 p-3 d-flex flex-column">
+                    
+                    
+                    
+                    
+                        <a href="taxon_10.html">
+                            <img src="../static/media_archive/Yi qi/Yi_r.png" 
+                                 class="card-img-top mb-3 rounded" 
+                                 style="height: 200px; object-fit: cover; width: 100%;" 
+                                 alt="Реконструкция Yi qi">
+                        </a>
+                    
+
+                    <div class="flex-grow-1">
+                        <h5 class="card-title font-italic">
+                            <a href="taxon_10.html" class="text-decoration-none text-dark">Yi qi</a>
+                        </h5>
+                        
+                        <p class="mb-1 small text-muted">Middle–Late Jurassic (~160 million years ago) | Hebei Province, China</p>
+                        <p class="mt-2 small mb-0">Yi qi was first described by Xu et al. (2015) based on specimen STM 31-2. To investigate feather melanosomes, samples we...</p>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+            
+            
+            
+
+            <div class="col taxon-card-col" 
+                 data-name="yuanchuavis kompsosoura" 
+                 data-period="early cretaceous (~120 million years ago)" 
+                 data-location="liaoning province, china"
+                 data-period-order="9">
+                
+                <div class="card h-100 p-3 d-flex flex-column">
+                    
+                    
+                    
+                    
+                        <a href="taxon_13.html">
+                            <img src="../static/media_archive/Yuanchuavis/Yuanchuavis_r.png" 
+                                 class="card-img-top mb-3 rounded" 
+                                 style="height: 200px; object-fit: cover; width: 100%;" 
+                                 alt="Реконструкция Yuanchuavis kompsosoura">
+                        </a>
+                    
+
+                    <div class="flex-grow-1">
+                        <h5 class="card-title font-italic">
+                            <a href="taxon_13.html" class="text-decoration-none text-dark">Yuanchuavis kompsosoura</a>
+                        </h5>
+                        
+                        <p class="mb-1 small text-muted">Early Cretaceous (~120 million years ago) | Liaoning Province, China</p>
+                        <p class="mt-2 small mb-0">In Wang et al. (2021), melanosomes were analyzed in the tail plumage of specimen IVPP V27883. The bird&#39;s tail exhibited ...</p>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+            
+            
+            
+
+            <div class="col taxon-card-col" 
+                 data-name="ammonoidea" 
+                 data-period="triassic, jurassic, cretaceous" 
+                 data-location="global distribution (russia, usa, madagascar, france, poland, etc.)"
+                 data-period-order="7">
+                
+                <div class="card h-100 p-3 d-flex flex-column">
+                    
+                    
+                    
+                    
+                        <a href="taxon_47.html">
+                            <img src="../static/media_archive/Ammonoid/Ammonoid_r.png" 
+                                 class="card-img-top mb-3 rounded" 
+                                 style="height: 200px; object-fit: cover; width: 100%;" 
+                                 alt="Реконструкция Аммониты">
+                        </a>
+                    
+
+                    <div class="flex-grow-1">
+                        <h5 class="card-title font-italic">
+                            <a href="taxon_47.html" class="text-decoration-none text-dark">Ammonoidea</a>
+                        </h5>
+                        
+                        <p class="mb-1 small text-muted">Triassic, Jurassic, Cretaceous | Global distribution (Russia, USA, Madagascar, France, Poland, etc.)</p>
+                        <p class="mt-2 small mb-0">A comprehensive review by Mapes &amp; Larson (2015) synthesized all documented instances of preserved coloration in ammonoid...</p>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+            
+            
+            
+
+            <div class="col taxon-card-col" 
+                 data-name="mesozoic mammaliaforms" 
+                 data-period="jurassic, cretaceous" 
+                 data-location="china"
+                 data-period-order="8">
+                
+                <div class="card h-100 p-3 d-flex flex-column">
+                    
+                    
+                    
+                    
+                        <a href="taxon_36.html">
+                            <img src="../static/media_archive/Mesozoic mammaliaforms/Mesozoic mammaliaforms_r.jpg" 
+                                 class="card-img-top mb-3 rounded" 
+                                 style="height: 200px; object-fit: cover; width: 100%;" 
+                                 alt="Реконструкция Мезозойские млекопитающие">
+                        </a>
+                    
+
+                    <div class="flex-grow-1">
+                        <h5 class="card-title font-italic">
+                            <a href="taxon_36.html" class="text-decoration-none text-dark">Mesozoic mammaliaforms</a>
+                        </h5>
+                        
+                        <p class="mb-1 small text-muted">Jurassic, Cretaceous | China</p>
+                        <p class="mt-2 small mb-0">In Li et al. (2025), pelage coloration was investigated across six Mesozoic mammal species: the Jurassic taxa Arborohara...</p>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+            
+            
+            
+
+            <div class="col taxon-card-col" 
+                 data-name="orthoconic cephalopods" 
+                 data-period="ordovician, silurian, devonian, carboniferous, permian, triassic" 
+                 data-location="global distribution (sweden, czech republic, usa, etc.)"
+                 data-period-order="2">
+                
+                <div class="card h-100 p-3 d-flex flex-column">
+                    
+                    
+                    
+                    
+                        <a href="taxon_34.html">
+                            <img src="../static/media_archive/Cephalopods/Cephalopods_r1.png" 
+                                 class="card-img-top mb-3 rounded" 
+                                 style="height: 200px; object-fit: cover; width: 100%;" 
+                                 alt="Реконструкция Прямораковинные головоногие">
+                        </a>
+                    
+
+                    <div class="flex-grow-1">
+                        <h5 class="card-title font-italic">
+                            <a href="taxon_34.html" class="text-decoration-none text-dark">Orthoconic Cephalopods</a>
+                        </h5>
+                        
+                        <p class="mb-1 small text-muted">Ordovician, Silurian, Devonian, Carboniferous, Permian, Triassic | Global distribution (Sweden, Czech Republic, USA, etc.)</p>
+                        <p class="mt-2 small mb-0">To date, numerous shells of orthoconic cephalopods preserving distinct traces of original in-life color patterns have be...</p>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+            
+            
+            
+
+            <div class="col taxon-card-col" 
+                 data-name="eggshells" 
+                 data-period="cretaceous" 
+                 data-location="usa, china, mongolia, argentina, france"
+                 data-period-order="9">
+                
+                <div class="card h-100 p-3 d-flex flex-column">
+                    
+                    
+                    
+                    
+                        <a href="taxon_32.html">
+                            <img src="../static/media_archive/Eggs/Heyuannia_eggs_r.png" 
+                                 class="card-img-top mb-3 rounded" 
+                                 style="height: 200px; object-fit: cover; width: 100%;" 
+                                 alt="Реконструкция Скорлупа яиц">
+                        </a>
+                    
+
+                    <div class="flex-grow-1">
+                        <h5 class="card-title font-italic">
+                            <a href="taxon_32.html" class="text-decoration-none text-dark">Eggshells</a>
+                        </h5>
+                        
+                        <p class="mb-1 small text-muted">Cretaceous | USA, China, Mongolia, Argentina, France</p>
+                        <p class="mt-2 small mb-0">In Wiemann et al. (2015), the eggshell coloration of the oviraptorid Heyuannia huangi was analyzed by detecting molecula...</p>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+            
+            
+            
+
+            <div class="col taxon-card-col" 
+                 data-name="morphologically conservative taxa" 
+                 data-period="devonian, carboniferous, permian, triassic, jurassic, cretaceous" 
+                 data-location="global distribution (usa, china, germany, uk, etc.)"
+                 data-period-order="4">
+                
+                <div class="card h-100 p-3 d-flex flex-column">
+                    
+                    
+                    
+                    
+                        <a href="taxon_35.html">
+                            <img src="../static/media_archive/Same_as_modern/Same_as_modern_r.png" 
+                                 class="card-img-top mb-3 rounded" 
+                                 style="height: 200px; object-fit: cover; width: 100%;" 
+                                 alt="Реконструкция Слабо изменившиеся животные">
+                        </a>
+                    
+
+                    <div class="flex-grow-1">
+                        <h5 class="card-title font-italic">
+                            <a href="taxon_35.html" class="text-decoration-none text-dark">Morphologically conservative taxa</a>
+                        </h5>
+                        
+                        <p class="mb-1 small text-muted">Devonian, Carboniferous, Permian, Triassic, Jurassic, Cretaceous | Global distribution (USA, China, Germany, UK, etc.)</p>
+                        <p class="mt-2 small mb-0">The scales of numerous fossil fishes retain discernible in-life pigmentation patterns. Mesozoic insects — such as giant ...</p>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+            
+            
+            
+
+            <div class="col taxon-card-col" 
+                 data-name="trilobita" 
+                 data-period="cambrian, ordovician, silurian, devonian, carboniferous" 
+                 data-location="global distribution (usa, germany, russia, etc.)"
+                 data-period-order="1">
+                
+                <div class="card h-100 p-3 d-flex flex-column">
+                    
+                    
+                    
+                    
+                        <a href="taxon_33.html">
+                            <img src="../static/media_archive/Trilobites/Trilobites_r.png" 
+                                 class="card-img-top mb-3 rounded" 
+                                 style="height: 200px; object-fit: cover; width: 100%;" 
+                                 alt="Реконструкция Трилобиты">
+                        </a>
+                    
+
+                    <div class="flex-grow-1">
+                        <h5 class="card-title font-italic">
+                            <a href="taxon_33.html" class="text-decoration-none text-dark">Trilobita</a>
+                        </h5>
+                        
+                        <p class="mb-1 small text-muted">Cambrian, Ordovician, Silurian, Devonian, Carboniferous | Global distribution (USA, Germany, Russia, etc.)</p>
+                        <p class="mt-2 small mb-0">Original in-life color patterns consisting of dark bands, stripes, and spots have been documented across the exoskeleton...</p>
+                    </div>
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+<script>
+function isLatin(str) {
+    return /^[a-z]/i.test(str);
+}
+
+function compareAlphabetical(a, b) {
+    const isLatA = isLatin(a);
+    const isLatB = isLatin(b);
+
+    if (isLatA && !isLatB) return -1;
+    if (!isLatA && isLatB) return 1;
+
+    return a.localeCompare(b, 'ru', { sensitivity: 'base' });
+}
+
+function filterAndSort() {
+    const nameVal = document.getElementById('searchName').value.toLowerCase().trim();
+    const periodVal = document.getElementById('searchPeriod').value.toLowerCase().trim();
+    const countryVal = document.getElementById('searchCountry').value.toLowerCase().trim();
+    const sortBy = document.getElementById('sortBy').value;
+
+    const container = document.getElementById('cardsContainer');
+    const cols = Array.from(container.children);
+
+    cols.forEach(col => {
+        const name = col.getAttribute('data-name') || '';
+        const period = col.getAttribute('data-period') || '';
+        const location = col.getAttribute('data-location') || '';
+
+        const matchName = !nameVal || name.includes(nameVal);
+        const matchPeriod = !periodVal || period.includes(periodVal);
+        const matchCountry = !countryVal || location.includes(countryVal);
+
+        if (matchName && matchPeriod && matchCountry) {
+            col.style.display = '';
+        } else {
+            col.style.display = 'none';
+        }
+    });
+
+    cols.sort((a, b) => {
+        const nameA = a.getAttribute('data-name');
+        const nameB = b.getAttribute('data-name');
+
+        if (sortBy === 'period') {
+            const orderA = parseInt(a.getAttribute('data-period-order')) || 10;
+            const orderB = parseInt(b.getAttribute('data-period-order')) || 10;
+            if (orderA !== orderB) {
+                return orderA - orderB;
+            }
+        }
+        
+        const currentLang = "en";
+        if (currentLang === 'en') {
+            return nameA.localeCompare(nameB, 'en', { sensitivity: 'base' });
+        }
+        return compareAlphabetical(nameA, nameB);
+    });
+
+    cols.forEach(col => container.appendChild(col));
+}
+
+document.addEventListener('DOMContentLoaded', filterAndSort);
+</script>
+
+    </div>
+    
+    <footer class="text-center mt-auto py-4 border-top">
+        <p class="text-muted small mb-0">Coloration of pre-Cenozoic extinct animals</p>
+    </footer>
+
+    <!-- Модальное окно "О сайте" -->
+    <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content border-0 shadow-lg">
+         <div class="modal-header text-white" style="background-color: #1a252f;">
+            <h5 class="modal-title font-italic" id="infoModalLabel">
+                Coloration of pre-Cenozoic extinct animals
+            </h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+          </div>
+          <div class="modal-body p-4" style="line-height: 1.7;">
+            
+                <p>This database contains information on animals that lived before the Cenozoic era, whose coloration is known to scientists to some extent. A brief overview is provided for each, along with links to original research and PDF files if available in open access. Reconstructions, fossils, and size comparisons are also included.</p>
+                <p>The website features representatives of every period from the Cambrian to the Cretaceous. Their coloration has been studied using a wide range of methods: from the well-known melanosome analysis of feathered dinosaurs to direct observation of the original colors of birds in Burmese amber, the analysis of diffraction gratings on the setae of Cambrian polychaetes, and the prediction of color patterns based on the scale morphology of Edmontosaurus mummies from the United States.</p>
+                <hr class="my-4">
+                <p class="mb-0 text-muted small">For questions, contact <a href="mailto:lashinda@my.msu.ru" class="text-decoration-none fw-bold">lashinda@my.msu.ru</a>.</p>
+            
+          </div>
+          <div class="modal-footer bg-light d-flex justify-content-between align-items-center">
+            <small class="text-muted">
+                <em>
+                    
+                        Last updated: August 30, 2026
+                    
+                </em>
+            </small>
+            <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Модальное окно картинок -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content bg-transparent border-0">
+          <div class="modal-body d-flex justify-content-center position-relative pt-4">
+            <div class="position-relative d-inline-block">
+                <!-- Крестик с принудительной видимостью (opacity: 1) -->
+                <button type="button" class="btn-close btn-close-white position-absolute" 
+                        data-bs-dismiss="modal" aria-label="Закрыть"
+                        style="top: 0; right: 0; transform: translate(calc(100% + 5px), calc(-100% - 5px)); z-index: 1055; opacity: 1;"></button>
+                <img id="modalImage" src="" class="img-fluid rounded shadow" style="max-height: 85vh;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        var imageModal = document.getElementById('imageModal');
+        if(imageModal) {
+            imageModal.addEventListener('show.bs.modal', function (event) {
+              var triggerImg = event.relatedTarget;
+              if (triggerImg) {
+                  document.getElementById('modalImage').setAttribute('src', triggerImg.getAttribute('src'));
+              }
+            });
+        }
+      });
+    </script>
+</body>
+</html>
