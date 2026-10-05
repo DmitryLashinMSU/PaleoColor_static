@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="static/og-preview-en.jpg" alt="PaleoColor preview" width="60%">
+  <img src="static/og-preview-en.jpg" alt="PaleoColor preview" width="100%">
 </p>
 
 You can check out the database [here](https://dmitrylashinmsu.github.io/PaleoColor_static/en/index.html). You will find a list of these animals with a short summary of each, artistic reconstructions, and links to the original research papers.
